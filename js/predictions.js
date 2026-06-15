@@ -157,7 +157,7 @@ const PredictionsTab = {
             <div style="display:flex;gap:12px;margin-top:8px;font-size:0.8rem;color:var(--gray-500);">
               <span>🏆 Group ${m.group}</span>
               ${m.venue_cn ? `<span>🏟 ${App.escapeHtml(m.venue_cn)}</span>` : ''}
-              <span>🕐 ${App.escapeHtml(m.time_bj)} BJT</span>
+              <span>🕐 ${App.formatTimeBJ(m.time_bj)} BJT</span>
             </div>
           </div>
           ${hasDetail ? '<span style="color:var(--gray-400);font-size:0.8rem;">展开 ▼</span>' : ''}

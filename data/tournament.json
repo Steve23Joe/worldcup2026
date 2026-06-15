@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 17:44 BJT",
+  "updated_at": "2026-06-15 18:39 BJT",
   "groups": {
     "A": [
       {
@@ -181,23 +181,23 @@
         "elo": 1702
       },
       {
-        "team": "Ecuador",
-        "team_cn": "厄瓜多尔",
-        "played": 1,
-        "pts": 1,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "elo": 1520
-      },
-      {
         "team": "Ivory Coast",
         "team_cn": "科特迪瓦",
         "played": 1,
-        "pts": 1,
+        "pts": 3,
         "gf": 1,
+        "ga": 0,
+        "gd": 1,
+        "elo": 1520
+      },
+      {
+        "team": "Ecuador",
+        "team_cn": "厄瓜多尔",
+        "played": 1,
+        "pts": 0,
+        "gf": 0,
         "ga": 1,
-        "gd": 0,
+        "gd": -1,
         "elo": 1520
       },
       {
@@ -213,34 +213,34 @@
     ],
     "F": [
       {
-        "team": "Netherlands",
-        "team_cn": "荷兰",
-        "played": 1,
-        "pts": 3,
-        "gf": 2,
-        "ga": 1,
-        "gd": 1,
-        "elo": 1756
-      },
-      {
         "team": "Sweden",
         "team_cn": "瑞典",
         "played": 1,
         "pts": 3,
-        "gf": 2,
+        "gf": 5,
         "ga": 1,
-        "gd": 1,
+        "gd": 4,
         "elo": 1543
       },
       {
         "team": "Japan",
         "team_cn": "日本",
         "played": 1,
-        "pts": 0,
-        "gf": 1,
+        "pts": 1,
+        "gf": 2,
         "ga": 2,
-        "gd": -1,
+        "gd": 0,
         "elo": 1544
+      },
+      {
+        "team": "Netherlands",
+        "team_cn": "荷兰",
+        "played": 1,
+        "pts": 1,
+        "gf": 2,
+        "ga": 2,
+        "gd": 0,
+        "elo": 1756
       },
       {
         "team": "Tunisia",
@@ -248,8 +248,8 @@
         "played": 1,
         "pts": 0,
         "gf": 1,
-        "ga": 2,
-        "gd": -1,
+        "ga": 5,
+        "gd": -4,
         "elo": 1417
       }
     ],
@@ -508,6 +508,15 @@
   },
   "best_thirds": [
     {
+      "team": "Japan",
+      "team_cn": "日本",
+      "group": "F",
+      "pts": 1,
+      "gd": 0,
+      "gf": 2,
+      "status": "🔵 ADVANCING (top 8)"
+    },
+    {
       "team": "Qatar",
       "team_cn": "卡塔尔",
       "group": "B",
@@ -526,15 +535,6 @@
       "status": "🔵 ADVANCING (top 8)"
     },
     {
-      "team": "Ecuador",
-      "team_cn": "厄瓜多尔",
-      "group": "E",
-      "pts": 1,
-      "gd": 0,
-      "gf": 1,
-      "status": "🔵 ADVANCING (top 8)"
-    },
-    {
       "team": "Czechia",
       "team_cn": "捷克",
       "group": "A",
@@ -544,12 +544,12 @@
       "status": "🔵 ADVANCING (top 8)"
     },
     {
-      "team": "Japan",
-      "team_cn": "日本",
-      "group": "F",
+      "team": "Ecuador",
+      "team_cn": "厄瓜多尔",
+      "group": "E",
       "pts": 0,
       "gd": -1,
-      "gf": 1,
+      "gf": 0,
       "status": "🔵 ADVANCING (top 8)"
     },
     {
@@ -635,7 +635,7 @@
         "away_cn": "土耳其",
         "group": "D",
         "score": "2-0",
-        "goals": "Goodwin 38'(澳), Duke 72'(澳)",
+        "goals": "Irankunda 26'(澳), Metcalfe 74'(澳)",
         "note": "澳大利亚完胜，亚足联球队继续保持不败"
       }
     ],
@@ -647,7 +647,7 @@
         "away_cn": "苏格兰",
         "group": "C",
         "score": "0-1",
-        "goals": "McGinn 28'(苏)",
+        "goals": "McGinn 27'(苏)",
         "note": "苏格兰取得欧洲球队首胜，海地世界杯首秀表现顽强"
       },
       {
@@ -657,8 +657,8 @@
         "away_cn": "库拉索",
         "group": "E",
         "score": "7-1",
-        "goals": "Woltemade 15'(德), Undav 38'(德), Wirtz 55'(德), Musiala 72'(德), Havertz 80'(德), Sané 85'(德), Adeyemi 90+1'(德); Margaritha 65'(库)",
-        "note": "德国7-1大胜，七人不同进球，库拉索世界杯首秀打入历史性一球"
+        "goals": "Nmecha 6'(德), Comenencia 21'(库); Schlotterbeck 38'(德), Havertz 45+5'点(德), Musiala 47'(德), Brown 68'(德), Undav 78'(德), Havertz 88'(德)",
+        "note": "德国7-1大胜，库拉索世界杯首秀打入历史性一球"
       },
       {
         "home": "Netherlands",
@@ -666,9 +666,9 @@
         "away": "Japan",
         "away_cn": "日本",
         "group": "F",
-        "score": "2-1",
-        "goals": "Gakpo 31'(荷), Simons 78'(荷); Kubo 64'(日)",
-        "note": ""
+        "score": "2-2",
+        "goals": "Van Dijk 50'(荷), Summerville 64'(荷); Nakamura 57'(日), Kamada 89'(日)",
+        "note": "日本89分钟绝平，亚洲球队再创奇迹"
       },
       {
         "home": "Ivory Coast",
@@ -676,9 +676,9 @@
         "away": "Ecuador",
         "away_cn": "厄瓜多尔",
         "group": "E",
-        "score": "1-1",
-        "goals": "Haller 38'(科); Caicedo 55'(厄)",
-        "note": ""
+        "score": "1-0",
+        "goals": "Diallo 89'(科)",
+        "note": "科特迪瓦89分钟绝杀，E组形势胶着"
       },
       {
         "home": "Sweden",
@@ -686,9 +686,9 @@
         "away": "Tunisia",
         "away_cn": "突尼斯",
         "group": "F",
-        "score": "2-1",
-        "goals": "Isak 23'(瑞), Gyökeres 71'(瑞); Msakni 55'(突)",
-        "note": ""
+        "score": "5-1",
+        "goals": "Ayari 7'(瑞), Isak 30'(瑞), Gyökeres 63'(瑞), Svanberg 75'(瑞), Ayari 90+5'(瑞); Rekik 43'(突)",
+        "note": "瑞典5-1大胜，Ayari梅开二度"
       }
     ]
   },

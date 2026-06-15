@@ -155,6 +155,14 @@ const App = {
     return '★'.repeat(count) + '☆'.repeat(5 - count);
   },
 
+  /** Format Beijing time from HHMM to HH:MM */
+  formatTimeBJ(timeStr) {
+    if (!timeStr || timeStr === 'TBD') return 'TBD';
+    const s = String(timeStr);
+    if (s.length === 4) return s.slice(0, 2) + ':' + s.slice(2);
+    return s;
+  },
+
   /** Escape HTML */
   escapeHtml(str) {
     const div = document.createElement('div');
