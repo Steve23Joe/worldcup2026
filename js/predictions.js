@@ -1,17 +1,24 @@
 /* ═══════════════════════════════════════════════════════════════════════
-   predictions.js — 比赛结果 & 预测 Tab
+   predictions.js — 比赛预测 & 历史比赛结果
    - Loads predictions.json (historical_results + tomorrow predictions)
-   - Renders 历史比赛结果 section with actual scores
-   - Renders 明天预测 section with AI analysis
+   - Sub-tab toggle: 比赛预测 (default) / 历史比赛结果
    ═══════════════════════════════════════════════════════════════════════ */
 
 const PredictionsTab = {
+  _data: null,
+  _tournamentData: null,
+  _activeSub: 'predictions', // default
+
   async load() {
     const container = document.getElementById('pred-content');
     const loading = document.getElementById('pred-loading');
     if (container.style.display !== 'none') return; // Already loaded
 
-    const data = await App.fetchData('predictions.json');
+    // Load both predictions and tournament data in parallel
+    const [data, tourneyData] = await Promise.all([
+      App.fetchData('predictions.json'),
+      App.fetchData('tournament.json'),
+    ]);
 
     loading.style.display = 'none';
     container.style.display = 'block';
@@ -28,21 +35,26 @@ const PredictionsTab = {
       return;
     }
 
+    this._data = data;
+    this._tournamentData = tourneyData;
+
     // Update footer
     document.getElementById('footer-updated').textContent =
       data.generated_at || '—';
 
-    let html = '';
+    // Show sub-tab nav (hidden — we now show both sections stacked)
+    const subNav = document.getElementById('pred-sub-nav');
+    subNav.style.display = 'none';
 
-    // ── Section 1: 历史比赛结果 ──
-    html += this.renderHistoricalResults(data);
+    // Render predictions and historical results stacked
+    document.getElementById('pred-view-predictions').innerHTML = this.renderTomorrowPredictions(data);
+    document.getElementById('pred-view-results').innerHTML = this.renderHistoricalResults(data);
+    document.getElementById('pred-view-results').style.display = 'block';
 
-    // ── Section 2: 明天预测 ──
-    html += this.renderTomorrowPredictions(data);
+    // Render standings sidebar
+    this.renderSidebarStandings(tourneyData);
 
-    container.innerHTML = html;
-
-    // Attach collapsible section handlers
+    // Attach collapsible handlers
     container.querySelectorAll('.analysis-section-title').forEach(title => {
       title.addEventListener('click', () => {
         title.classList.toggle('collapsed');
@@ -58,6 +70,31 @@ const PredictionsTab = {
         card.classList.toggle('expanded');
       });
     });
+
+    // Sub-tab switching
+    subNav.querySelectorAll('.sub-tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => this.switchSub(btn.dataset.sub));
+    });
+
+    // Show both views (no sub-tab switching)
+    document.getElementById('pred-view-predictions').style.display = 'block';
+    document.getElementById('pred-view-results').style.display = 'block';
+  },
+
+  /** Switch between sub-tabs: 'predictions' | 'results' */
+  switchSub(name) {
+    this._activeSub = name;
+
+    // Update button active states
+    document.querySelectorAll('#pred-sub-nav .sub-tab-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.sub === name);
+    });
+
+    // Show/hide views
+    document.getElementById('pred-view-predictions').style.display =
+      name === 'predictions' ? 'block' : 'none';
+    document.getElementById('pred-view-results').style.display =
+      name === 'results' ? 'block' : 'none';
   },
 
   // ── Render historical results section ──
@@ -140,7 +177,7 @@ const PredictionsTab = {
     const matches = data.matches;
     if (!matches || matches.length === 0) {
       return `
-        <div class="card" style="text-align:center;margin-top:24px;">
+        <div class="card" style="text-align:center;">
           <div class="no-data">
             <p style="font-size:1.5rem;">📭</p>
             <p style="font-size:1.1rem;font-weight:600;">暂无明日预测</p>
@@ -150,12 +187,11 @@ const PredictionsTab = {
     }
 
     let html = `
-      <div class="card" style="text-align:center;background:linear-gradient(135deg,var(--navy),var(--green-dark));color:var(--white);margin-bottom:24px;margin-top:24px;">
+      <div class="card" style="text-align:center;background:linear-gradient(135deg,var(--navy),var(--green-dark));color:var(--white);margin-bottom:24px;">
         <h2 style="margin:0;font-size:1.4rem;">📅 ${data.date_label_cn} 比赛预测</h2>
         <p style="margin:8px 0 0;opacity:0.8;">共 ${data.match_count} 场比赛 · 生成时间：${data.generated_at}</p>
       </div>`;
 
-    // Render each prediction match card
     data.matches.forEach((m, idx) => {
       html += this.renderMatchCard(m, idx);
     });
@@ -166,8 +202,6 @@ const PredictionsTab = {
   renderMatchCard(m, idx) {
     const pred = m.prediction || {};
     const raw = m.raw_analysis || '';
-
-    // Split raw analysis into the 4 sections
     const sections = this.splitSections(raw);
 
     let html = `
@@ -190,11 +224,9 @@ const PredictionsTab = {
       </div>
       <div class="match-card-body">`;
 
-    // Check if we have the full 4-part analysis or just a summary
     const hasFullAnalysis = sections.team || sections.players || sections.simulation;
 
     if (hasFullAnalysis) {
-      // Full 4-part analysis
       if (sections.team) {
         html += this.renderSection('1. 球队分析', sections.team, true);
       }
@@ -206,10 +238,8 @@ const PredictionsTab = {
       }
       html += this.renderPredictionBox(pred, sections.prediction);
     } else if (pred.predicted_score || pred.confidence_stars != null) {
-      // Summary mode: show prediction card with raw commentary
       html += this.renderSummaryCard(pred, raw);
     } else if (raw) {
-      // Fallback: just render the raw text
       html += `<div class="analysis-content">${App.renderMarkdown(raw)}</div>`;
     } else {
       html += '<div class="no-data" style="padding:20px;">暂无分析数据</div>';
@@ -227,7 +257,6 @@ const PredictionsTab = {
     const result = { team: '', players: '', simulation: '', prediction: '' };
     if (!raw) return result;
 
-    // Find section boundaries using ## markers
     const teamMatch = raw.match(/##\s*1\.?\s*(?:Team Analysis|球队分析)([\s\S]*?)(?=##\s*2\.|$)/i);
     const playerMatch = raw.match(/##\s*2\.?\s*(?:Player Analysis|球员分析)([\s\S]*?)(?=##\s*3\.|$)/i);
     const simMatch = raw.match(/##\s*3\.?\s*(?:Match Simulation|赛事模拟)([\s\S]*?)(?=##\s*4\.|$)/i);
@@ -238,7 +267,6 @@ const PredictionsTab = {
     if (simMatch) result.simulation = simMatch[1].trim();
     if (predMatch) result.prediction = predMatch[1].trim();
 
-    // If no ## markers found, try to use the entire raw content
     if (!result.team && !result.players && !result.simulation && !result.prediction) {
       result.team = raw;
     }
@@ -246,7 +274,6 @@ const PredictionsTab = {
     return result;
   },
 
-  /** Render a collapsible analysis section */
   renderSection(title, content, open = false) {
     const collapsedClass = open ? '' : ' collapsed';
     const contentClass = open ? '' : ' collapsed';
@@ -261,7 +288,6 @@ const PredictionsTab = {
       </div>`;
   },
 
-  /** Render the prediction box with probability bars, scorelines, etc. */
   renderPredictionBox(pred, sectionText) {
     const hwp = pred.home_win_pct;
     const dp = pred.draw_pct;
@@ -279,7 +305,6 @@ const PredictionsTab = {
         <div class="analysis-content">
           <div class="prediction-box">`;
 
-    // Probability bars
     if (hasProbs) {
       html += `
             <div class="prob-legend">
@@ -300,7 +325,6 @@ const PredictionsTab = {
             </div>`;
     }
 
-    // Top 3 scorelines
     if (scorelines.length > 0) {
       html += '<div class="scorelines">';
       scorelines.forEach((sl, i) => {
@@ -315,7 +339,6 @@ const PredictionsTab = {
       html += '</div>';
     }
 
-    // Predicted score
     if (predictedScore) {
       html += `
             <div class="predicted-score">
@@ -324,7 +347,6 @@ const PredictionsTab = {
             </div>`;
     }
 
-    // Confidence stars
     if (stars != null) {
       html += `
             <div class="confidence">
@@ -336,7 +358,6 @@ const PredictionsTab = {
     html += `
           </div>`;
 
-    // Additional prediction text from Claude
     if (sectionText) {
       html += `
           <div style="margin-top:16px;">
@@ -351,14 +372,110 @@ const PredictionsTab = {
     return html;
   },
 
-  /** Render a compact summary card when only predicted score + stars are available */
+  // ── Sidebar Standings ──────────────────────────────────────────
+  renderSidebarStandings(tourneyData) {
+    const sidebarLoading = document.getElementById('sidebar-loading');
+    const sidebarContent = document.getElementById('sidebar-standings');
+
+    sidebarLoading.style.display = 'none';
+
+    if (!tourneyData || !tourneyData.groups || Object.keys(tourneyData.groups).length === 0) {
+      sidebarContent.style.display = 'block';
+      sidebarContent.innerHTML = `
+        <div class="sidebar-card">
+          <div class="sidebar-card-header">🏆 积分榜</div>
+          <div class="no-data" style="padding:20px;font-size:0.85rem;">暂无积分榜数据</div>
+        </div>`;
+      return;
+    }
+
+    let html = '';
+
+    // Render each group in compact sidebar cards
+    for (const [group, table] of Object.entries(tourneyData.groups)) {
+      html += this.renderSidebarGroupCard(group, table);
+    }
+
+    // Best 3rd-place (compact)
+    if (tourneyData.best_thirds && tourneyData.best_thirds.length > 0) {
+      html += this.renderSidebarBestThirds(tourneyData.best_thirds);
+    }
+
+    sidebarContent.innerHTML = html;
+    sidebarContent.style.display = 'block';
+  },
+
+  renderSidebarGroupCard(group, table) {
+    let html = `
+    <div class="sidebar-card">
+      <div class="sidebar-card-header">🏆 Group ${group}</div>
+      <div class="table-container">
+        <table class="sidebar-table">
+          <thead>
+            <tr>
+              <th>#</th><th>球队</th><th>P</th><th>GD</th><th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>`;
+
+    table.forEach((row, i) => {
+      html += `
+            <tr>
+              <td>${i + 1}</td>
+              <td class="team-cell">
+                ${App.escapeHtml(row.team_cn)}
+                <span class="team-en">${App.escapeHtml(row.team)}</span>
+              </td>
+              <td>${row.played}</td>
+              <td>${row.gd > 0 ? '+' + row.gd : row.gd}</td>
+              <td><strong>${row.pts}</strong></td>
+            </tr>`;
+    });
+
+    html += `
+          </tbody>
+        </table>
+      </div>
+    </div>`;
+
+    return html;
+  },
+
+  renderSidebarBestThirds(thirds) {
+    let html = `
+    <div class="sidebar-card">
+      <div class="sidebar-card-header">🏅 最佳小组第三</div>
+      <div class="thirds-grid" style="gap:4px;margin-top:8px;">`;
+
+    thirds.forEach((t, i) => {
+      let statusClass = '';
+      if (t.status && t.status.includes('ADVANCING')) statusClass = 'advancing';
+      else if (t.status && t.status.includes('BUBBLE')) statusClass = 'bubble';
+      else statusClass = 'out';
+
+      html += `
+        <div class="third-card ${statusClass}" style="min-width:auto;flex:1 1 100%;padding:6px 10px;">
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span class="third-rank" style="font-size:0.7rem;">#${i + 1}</span>
+            <span class="third-team" style="font-size:0.85rem;">${App.escapeHtml(t.team_cn)}</span>
+            <span style="font-size:0.7rem;color:var(--gray-500);margin-left:auto;">${t.pts}pts</span>
+          </div>
+        </div>`;
+    });
+
+    html += `
+      </div>
+    </div>`;
+
+    return html;
+  },
+
   renderSummaryCard(pred, rawText) {
     const predictedScore = pred.predicted_score;
     const stars = pred.confidence_stars;
 
     let html = '<div class="prediction-box" style="margin:0;">';
 
-    // Big predicted score
     if (predictedScore) {
       html += `
         <div class="predicted-score">
@@ -367,7 +484,6 @@ const PredictionsTab = {
         </div>`;
     }
 
-    // Confidence stars
     if (stars != null) {
       html += `
         <div class="confidence">
@@ -376,9 +492,7 @@ const PredictionsTab = {
         </div>`;
     }
 
-    // Raw commentary (strip the table, keep the text)
     if (rawText) {
-      // Extract text after the table
       const textParts = rawText.split(/\n\n/);
       const commentary = textParts.filter(p =>
         !p.includes('|---') && !p.includes('预测比分') && p.trim().length > 20

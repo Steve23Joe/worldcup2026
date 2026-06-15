@@ -812,6 +812,69 @@ tbody tr:nth-child(even):hover { background: var(--gray-100); }
   border-color: var(--green-mid);
 }
 
+/* ── Two-Column Layout (Predictions + Standings Sidebar) ───────────── */
+.pred-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.pred-main {
+  flex: 1;
+  min-width: 0; /* allow shrink below content width */
+}
+
+.pred-sidebar {
+  width: 380px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 140px; /* header + tab bar */
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+}
+
+/* Sidebar Cards */
+.sidebar-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+  margin-bottom: 12px;
+}
+
+.sidebar-card-header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 8px 14px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+/* Compact table for sidebar */
+.sidebar-table {
+  font-size: 0.78rem;
+}
+
+.sidebar-table thead th {
+  background: var(--navy-light);
+  font-size: 0.7rem;
+  padding: 6px 6px;
+  white-space: nowrap;
+}
+
+.sidebar-table tbody td {
+  padding: 6px 6px;
+}
+
+.sidebar-table .team-cell {
+  font-size: 0.8rem;
+}
+
+.sidebar-table .team-cell .team-en {
+  font-size: 0.65rem;
+}
+
 /* ── Responsive ────────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
   html { font-size: 14px; }
@@ -847,6 +910,20 @@ tbody tr:nth-child(even):hover { background: var(--gray-100); }
   .prob-bars { height: 28px; }
 
   .predicted-score-value { font-size: 2rem; }
+
+  /* Sidebar stacks below on mobile */
+  .pred-layout {
+    flex-direction: column;
+  }
+
+  .pred-sidebar {
+    width: 100%;
+    position: static;
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  .sidebar-table { font-size: 0.8rem; }
 }
 
 @media (max-width: 480px) {
