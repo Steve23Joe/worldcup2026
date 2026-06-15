@@ -2,16 +2,21 @@
    app.js — Main Application Controller
    - Tab switching
    - Beijing time display
-   - JSON data fetching with cache
+   - JSON data fetching with cache-busting
    ═══════════════════════════════════════════════════════════════════════ */
 
 const App = {
   dataCache: {},
+  cacheTimestamps: {},
+  CACHE_TTL_MS: 5 * 60 * 1000, // 5 minutes — data refreshes daily, but allow short cache for tab switches
 
   /* ── Initialize ──────────────────────────────────────────────────── */
-  init() {
+  async init() {
     this.updateBeijingTime();
     setInterval(() => this.updateBeijingTime(), 60000);
+
+    // Check for new version on load
+    await this.checkVersion();
 
     // Tab switching
     document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -59,18 +64,56 @@ const App = {
     if (loaders[tabId]) loaders[tabId]();
   },
 
-  /* ── JSON Fetch with Cache ───────────────────────────────────────── */
+  /* ── JSON Fetch with Cache-Busting ────────────────────────────────── */
   async fetchData(filename) {
-    if (this.dataCache[filename]) return this.dataCache[filename];
+    // Check in-memory cache with TTL
+    const now = Date.now();
+    const cached = this.dataCache[filename];
+    const cachedAt = this.cacheTimestamps[filename] || 0;
+    if (cached && (now - cachedAt) < this.CACHE_TTL_MS) {
+      return cached;
+    }
+
     try {
-      const resp = await fetch('data/' + filename);
+      // Add cache-busting: use version if available, otherwise timestamp
+      const separator = filename.includes('?') ? '&' : '?';
+      const bust = this._buildVersion || now;
+      const url = 'data/' + filename + separator + 'v=' + bust;
+      const resp = await fetch(url, { cache: 'no-cache' });
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       const data = await resp.json();
       this.dataCache[filename] = data;
+      this.cacheTimestamps[filename] = now;
       return data;
     } catch (err) {
       console.error(`Failed to load ${filename}:`, err);
+      // Return stale cache if available and network failed
+      if (cached) return cached;
       return null;
+    }
+  },
+
+  /* ── Version Check ───────────────────────────────────────────────── */
+  async checkVersion() {
+    try {
+      const v = Date.now();
+      const resp = await fetch('version.txt?v=' + v, { cache: 'no-cache' });
+      if (resp.ok) {
+        const text = await resp.text();
+        this._buildVersion = text.trim();
+        // If version changed since last visit, force full page reload
+        const stored = localStorage.getItem('_wc_version');
+        if (stored && stored !== this._buildVersion) {
+          console.log('New version detected: ' + this._buildVersion + ' (was ' + stored + '). Reloading...');
+          localStorage.setItem('_wc_version', this._buildVersion);
+          window.location.reload(true);
+          return; // never reached — page reloads
+        }
+        localStorage.setItem('_wc_version', this._buildVersion);
+      }
+    } catch (e) {
+      // version.txt not found — use timestamp fallback in fetchData
+      this._buildVersion = null;
     }
   },
 

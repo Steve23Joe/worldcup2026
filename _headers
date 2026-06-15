@@ -1,0 +1,22 @@
+# EdgeOne Pages 缓存规则
+# 控制每个路径的 HTTP Cache-Control 响应头
+
+# HTML 主页面 — 不缓存，确保每次都获取最新版本
+/index.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# version.txt — 不缓存，前端用它检测是否有新版本
+/version.txt
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# JSON 数据文件 — 最多缓存 5 分钟（数据每天更新一次，5分钟足够）
+/data/*
+  Cache-Control: public, max-age=300, s-maxage=300
+
+# CSS — 1 小时（不常改）
+/css/*
+  Cache-Control: public, max-age=3600
+
+# JS — 1 小时（不常改）
+/js/*
+  Cache-Control: public, max-age=3600

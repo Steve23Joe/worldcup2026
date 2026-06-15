@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>2026 世界杯预测 | World Cup 2026 Predictions</title>
   <link rel="stylesheet" href="css/style.css">
+
+
+
 </head>
 <body>
   <!-- ═══════════════════════════════════════════════════ -->
@@ -54,7 +60,15 @@
         <div class="spinner"></div>
         <p>加载预测数据...</p>
       </div>
-      <div id="pred-content" style="display:none;"></div>
+      <div id="pred-content" style="display:none;">
+        <!-- Sub-tab buttons -->
+        <div class="sub-tab-nav" id="pred-sub-nav" style="display:none;justify-content:center;gap:12px;margin-bottom:20px;">
+          <button class="sub-tab-btn" data-sub="predictions">📅 比赛预测</button>
+          <button class="sub-tab-btn" data-sub="results">📋 历史比赛结果</button>
+        </div>
+        <div id="pred-view-predictions"></div>
+        <div id="pred-view-results" style="display:none;"></div>
+      </div>
     </section>
 
     <!-- Standings Tab -->
