@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 14:26 BJT",
+  "updated_at": "2026-06-15 14:46 BJT",
   "groups": {
     "A": [
       {
@@ -10,7 +10,7 @@
         "gf": 2,
         "ga": 0,
         "gd": 2,
-        "elo": 1530
+        "elo": 1650
       },
       {
         "team": "South Korea",
@@ -20,7 +20,7 @@
         "gf": 2,
         "ga": 1,
         "gd": 1,
-        "elo": 1530
+        "elo": 1547
       },
       {
         "team": "Czechia",
@@ -30,7 +30,7 @@
         "gf": 1,
         "ga": 2,
         "gd": -1,
-        "elo": 1470
+        "elo": 1453
       },
       {
         "team": "South Africa",
@@ -40,7 +40,7 @@
         "gf": 0,
         "ga": 2,
         "gd": -2,
-        "elo": 1470
+        "elo": 1350
       }
     ],
     "B": [
@@ -52,7 +52,7 @@
         "gf": 1,
         "ga": 1,
         "gd": 0,
-        "elo": 1500
+        "elo": 1408
       },
       {
         "team": "Canada",
@@ -62,7 +62,7 @@
         "gf": 1,
         "ga": 1,
         "gd": 0,
-        "elo": 1500
+        "elo": 1492
       },
       {
         "team": "Qatar",
@@ -72,7 +72,7 @@
         "gf": 1,
         "ga": 1,
         "gd": 0,
-        "elo": 1500
+        "elo": 1359
       },
       {
         "team": "Switzerland",
@@ -82,7 +82,7 @@
         "gf": 1,
         "ga": 1,
         "gd": 0,
-        "elo": 1500
+        "elo": 1581
       }
     ],
     "C": [
@@ -94,7 +94,7 @@
         "gf": 1,
         "ga": 0,
         "gd": 1,
-        "elo": 1530
+        "elo": 1467
       },
       {
         "team": "Brazil",
@@ -104,7 +104,7 @@
         "gf": 1,
         "ga": 1,
         "gd": 0,
-        "elo": 1500
+        "elo": 1804
       },
       {
         "team": "Morocco",
@@ -114,7 +114,7 @@
         "gf": 1,
         "ga": 1,
         "gd": 0,
-        "elo": 1500
+        "elo": 1636
       },
       {
         "team": "Haiti",
@@ -124,7 +124,7 @@
         "gf": 0,
         "ga": 1,
         "gd": -1,
-        "elo": 1470
+        "elo": 1093
       }
     ],
     "D": [
@@ -136,7 +136,7 @@
         "gf": 4,
         "ga": 1,
         "gd": 3,
-        "elo": 1530
+        "elo": 1633
       },
       {
         "team": "Australia",
@@ -146,7 +146,7 @@
         "gf": 2,
         "ga": 0,
         "gd": 2,
-        "elo": 1530
+        "elo": 1423
       },
       {
         "team": "Turkey",
@@ -156,7 +156,7 @@
         "gf": 0,
         "ga": 2,
         "gd": -2,
-        "elo": 1470
+        "elo": 1497
       },
       {
         "team": "Paraguay",
@@ -166,7 +166,7 @@
         "gf": 1,
         "ga": 4,
         "gd": -3,
-        "elo": 1470
+        "elo": 1387
       }
     ],
     "E": [
@@ -178,7 +178,7 @@
         "gf": 7,
         "ga": 1,
         "gd": 6,
-        "elo": 1530
+        "elo": 1702
       },
       {
         "team": "Ecuador",
@@ -188,7 +188,7 @@
         "gf": 1,
         "ga": 1,
         "gd": 0,
-        "elo": 1500
+        "elo": 1520
       },
       {
         "team": "Ivory Coast",
@@ -198,7 +198,7 @@
         "gf": 1,
         "ga": 1,
         "gd": 0,
-        "elo": 1500
+        "elo": 1520
       },
       {
         "team": "Curaçao",
@@ -208,7 +208,7 @@
         "gf": 1,
         "ga": 7,
         "gd": -6,
-        "elo": 1470
+        "elo": 1138
       }
     ],
     "F": [
@@ -220,7 +220,7 @@
         "gf": 2,
         "ga": 1,
         "gd": 1,
-        "elo": 1530
+        "elo": 1756
       },
       {
         "team": "Sweden",
@@ -230,7 +230,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": 1530
+        "elo": 1520
       },
       {
         "team": "Tunisia",
@@ -240,7 +240,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": 1470
+        "elo": 1440
       },
       {
         "team": "Japan",
@@ -250,7 +250,7 @@
         "gf": 1,
         "ga": 2,
         "gd": -1,
-        "elo": 1470
+        "elo": 1544
       }
     ],
     "G": [
@@ -262,7 +262,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1720
       },
       {
         "team": "Egypt",
@@ -272,7 +272,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1480
       },
       {
         "team": "Iran",
@@ -282,7 +282,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1460
       },
       {
         "team": "New Zealand",
@@ -292,7 +292,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1180
       }
     ],
     "H": [
@@ -304,7 +304,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1240
       },
       {
         "team": "Saudi Arabia",
@@ -314,7 +314,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1360
       },
       {
         "team": "Spain",
@@ -324,7 +324,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1780
       },
       {
         "team": "Uruguay",
@@ -334,7 +334,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1660
       }
     ],
     "I": [
@@ -346,7 +346,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1860
       },
       {
         "team": "Iraq",
@@ -356,7 +356,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1320
       },
       {
         "team": "Norway",
@@ -366,7 +366,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1540
       },
       {
         "team": "Senegal",
@@ -376,7 +376,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1580
       }
     ],
     "J": [
@@ -388,7 +388,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1480
       },
       {
         "team": "Argentina",
@@ -398,7 +398,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1880
       },
       {
         "team": "Austria",
@@ -408,7 +408,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1580
       },
       {
         "team": "Jordan",
@@ -418,7 +418,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1260
       }
     ],
     "K": [
@@ -430,7 +430,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1600
       },
       {
         "team": "DR Congo",
@@ -440,7 +440,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1360
       },
       {
         "team": "Portugal",
@@ -450,7 +450,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1720
       },
       {
         "team": "Uzbekistan",
@@ -460,7 +460,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1300
       }
     ],
     "L": [
@@ -472,7 +472,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1700
       },
       {
         "team": "England",
@@ -482,7 +482,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1800
       },
       {
         "team": "Ghana",
@@ -492,7 +492,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1440
       },
       {
         "team": "Panama",
@@ -502,7 +502,7 @@
         "gf": 0,
         "ga": 0,
         "gd": 0,
-        "elo": null
+        "elo": 1280
       }
     ]
   },
@@ -658,8 +658,8 @@
         "away_cn": "日本",
         "group": "F",
         "score": "2-1",
-        "goals": "Gakpo 41'(荷), Dumfries 63'(荷); 三笘薫 78'(日)",
-        "note": "荷兰2-0领先后日本反扑，三笘薫替补进球难救主"
+        "goals": "Gakpo 31'(荷), Simons 78'(荷); Kubo 64'(日)",
+        "note": ""
       },
       {
         "home": "Ivory Coast",
@@ -668,8 +668,8 @@
         "away_cn": "厄瓜多尔",
         "group": "E",
         "score": "1-1",
-        "goals": "Haller 55'(科); Caicedo 68'(厄)",
-        "note": "非洲冠军科特迪瓦与南美劲旅握手言和，E组形势胶着"
+        "goals": "Haller 38'(科); Caicedo 55'(厄)",
+        "note": ""
       }
     ]
   },

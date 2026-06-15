@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 14:26 BJT",
+  "updated_at": "2026-06-15 14:46 BJT",
   "teams": {
     "Algeria": {
       "team_cn": "阿尔及利亚",
@@ -630,7 +630,7 @@
         "gf": 1,
         "ga": 2,
         "scorers": {
-          "三笘薫": 1
+          "Kubo": 1
         }
       }
     },
@@ -736,7 +736,7 @@
         "ga": 1,
         "scorers": {
           "Gakpo": 1,
-          "Dumfries": 1
+          "Simons": 1
         }
       }
     },
