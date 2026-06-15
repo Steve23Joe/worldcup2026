@@ -1,17 +1,7 @@
 {
-  "updated_at": "2026-06-15 13:48 BJT",
+  "updated_at": "2026-06-15 14:02 BJT",
   "groups": {
     "A": [
-      {
-        "team": "Czechia",
-        "team_cn": "捷克",
-        "played": 1,
-        "pts": 0,
-        "gf": 1,
-        "ga": 2,
-        "gd": -1,
-        "elo": 1453
-      },
       {
         "team": "Mexico",
         "team_cn": "墨西哥",
@@ -23,16 +13,6 @@
         "elo": 1650
       },
       {
-        "team": "South Africa",
-        "team_cn": "南非",
-        "played": 1,
-        "pts": 0,
-        "gf": 0,
-        "ga": 2,
-        "gd": -2,
-        "elo": 1350
-      },
-      {
         "team": "South Korea",
         "team_cn": "韩国",
         "played": 1,
@@ -41,6 +21,26 @@
         "ga": 1,
         "gd": 1,
         "elo": 1547
+      },
+      {
+        "team": "Czechia",
+        "team_cn": "捷克",
+        "played": 1,
+        "pts": 0,
+        "gf": 1,
+        "ga": 2,
+        "gd": -1,
+        "elo": 1453
+      },
+      {
+        "team": "South Africa",
+        "team_cn": "南非",
+        "played": 1,
+        "pts": 0,
+        "gf": 0,
+        "ga": 2,
+        "gd": -2,
+        "elo": 1350
       }
     ],
     "B": [
@@ -87,6 +87,16 @@
     ],
     "C": [
       {
+        "team": "Scotland",
+        "team_cn": "苏格兰",
+        "played": 1,
+        "pts": 3,
+        "gf": 1,
+        "ga": 0,
+        "gd": 1,
+        "elo": 1467
+      },
+      {
         "team": "Brazil",
         "team_cn": "巴西",
         "played": 1,
@@ -95,16 +105,6 @@
         "ga": 1,
         "gd": 0,
         "elo": 1804
-      },
-      {
-        "team": "Haiti",
-        "team_cn": "海地",
-        "played": 1,
-        "pts": 0,
-        "gf": 0,
-        "ga": 1,
-        "gd": -1,
-        "elo": 1093
       },
       {
         "team": "Morocco",
@@ -117,17 +117,27 @@
         "elo": 1636
       },
       {
-        "team": "Scotland",
-        "team_cn": "苏格兰",
+        "team": "Haiti",
+        "team_cn": "海地",
         "played": 1,
-        "pts": 3,
-        "gf": 1,
-        "ga": 0,
-        "gd": 1,
-        "elo": 1467
+        "pts": 0,
+        "gf": 0,
+        "ga": 1,
+        "gd": -1,
+        "elo": 1093
       }
     ],
     "D": [
+      {
+        "team": "USA",
+        "team_cn": "美国",
+        "played": 1,
+        "pts": 3,
+        "gf": 4,
+        "ga": 1,
+        "gd": 3,
+        "elo": 1633
+      },
       {
         "team": "Australia",
         "team_cn": "澳大利亚",
@@ -137,16 +147,6 @@
         "ga": 0,
         "gd": 2,
         "elo": 1423
-      },
-      {
-        "team": "Paraguay",
-        "team_cn": "巴拉圭",
-        "played": 1,
-        "pts": 0,
-        "gf": 1,
-        "ga": 4,
-        "gd": -3,
-        "elo": 1387
       },
       {
         "team": "Turkey",
@@ -159,26 +159,26 @@
         "elo": 1497
       },
       {
-        "team": "USA",
-        "team_cn": "美国",
+        "team": "Paraguay",
+        "team_cn": "巴拉圭",
         "played": 1,
-        "pts": 3,
-        "gf": 4,
-        "ga": 1,
-        "gd": 3,
-        "elo": 1633
+        "pts": 0,
+        "gf": 1,
+        "ga": 4,
+        "gd": -3,
+        "elo": 1387
       }
     ],
     "E": [
       {
-        "team": "Curaçao",
-        "team_cn": "库拉索",
+        "team": "Germany",
+        "team_cn": "德国",
         "played": 1,
-        "pts": 0,
-        "gf": 1,
-        "ga": 7,
-        "gd": -6,
-        "elo": 1138
+        "pts": 3,
+        "gf": 7,
+        "ga": 1,
+        "gd": 6,
+        "elo": 1702
       },
       {
         "team": "Ecuador",
@@ -191,16 +191,6 @@
         "elo": 1520
       },
       {
-        "team": "Germany",
-        "team_cn": "德国",
-        "played": 1,
-        "pts": 3,
-        "gf": 7,
-        "ga": 1,
-        "gd": 6,
-        "elo": 1702
-      },
-      {
         "team": "Ivory Coast",
         "team_cn": "科特迪瓦",
         "played": 1,
@@ -209,19 +199,19 @@
         "ga": 1,
         "gd": 0,
         "elo": 1520
-      }
-    ],
-    "F": [
+      },
       {
-        "team": "Japan",
-        "team_cn": "日本",
+        "team": "Curaçao",
+        "team_cn": "库拉索",
         "played": 1,
         "pts": 0,
         "gf": 1,
-        "ga": 2,
-        "gd": -1,
-        "elo": 1544
-      },
+        "ga": 7,
+        "gd": -6,
+        "elo": 1138
+      }
+    ],
+    "F": [
       {
         "team": "Netherlands",
         "team_cn": "荷兰",
@@ -251,6 +241,16 @@
         "ga": 0,
         "gd": 0,
         "elo": 1440
+      },
+      {
+        "team": "Japan",
+        "team_cn": "日本",
+        "played": 1,
+        "pts": 0,
+        "gf": 1,
+        "ga": 2,
+        "gd": -1,
+        "elo": 1544
       }
     ],
     "G": [
