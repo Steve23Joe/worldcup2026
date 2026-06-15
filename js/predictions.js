@@ -42,14 +42,13 @@ const PredictionsTab = {
     document.getElementById('footer-updated').textContent =
       data.generated_at || '—';
 
-    // Show sub-tab nav (hidden — we now show both sections stacked)
+    // Show sub-tab nav
     const subNav = document.getElementById('pred-sub-nav');
-    subNav.style.display = 'none';
+    subNav.style.display = 'flex';
 
-    // Render predictions and historical results stacked
+    // Render predictions and historical results (both, but only one visible at a time)
     document.getElementById('pred-view-predictions').innerHTML = this.renderTomorrowPredictions(data);
     document.getElementById('pred-view-results').innerHTML = this.renderHistoricalResults(data);
-    document.getElementById('pred-view-results').style.display = 'block';
 
     // Render standings sidebar
     this.renderSidebarStandings(tourneyData);
@@ -76,9 +75,8 @@ const PredictionsTab = {
       btn.addEventListener('click', () => this.switchSub(btn.dataset.sub));
     });
 
-    // Show both views (no sub-tab switching)
-    document.getElementById('pred-view-predictions').style.display = 'block';
-    document.getElementById('pred-view-results').style.display = 'block';
+    // Default: show predictions, hide historical results
+    this.switchSub('predictions');
   },
 
   /** Switch between sub-tabs: 'predictions' | 'results' */
