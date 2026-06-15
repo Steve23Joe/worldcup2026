@@ -1,0 +1,1220 @@
+{
+  "updated_at": "2026-06-15 13:27 BJT",
+  "teams": {
+    "Algeria": {
+      "team_cn": "阿尔及利亚",
+      "fifa_rank": 37,
+      "confederation": "CAF",
+      "key_players": [
+        "Riyad Mahrez",
+        "Islam Slimani",
+        "Ramiz Zerrouki",
+        "Youssef Belaïli"
+      ],
+      "playing_style": "技术流传控，中场控制力强，依靠核心球员个人能力打开局面",
+      "strength_rating": 74,
+      "strengths": "中场技术细腻，边路突破能力强，大赛经验丰富",
+      "weaknesses": "防守转换速度偏慢，体能储备在高强度对抗中不占优",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Argentina": {
+      "team_cn": "阿根廷",
+      "fifa_rank": 1,
+      "confederation": "CONMEBOL",
+      "key_players": [
+        "Lionel Messi",
+        "Julián Álvarez",
+        "Enzo Fernández",
+        "Emiliano Martínez",
+        "Lautaro Martínez"
+      ],
+      "playing_style": "传控渗透结合快速反击，整体防守严密，核心球员终结能力强",
+      "strength_rating": 94,
+      "strengths": "团队默契度极高，战术执行力强，冠军底蕴深厚，门将位置世界顶级",
+      "weaknesses": "后防线身高偏矮，面对高空轰炸有一定隐患",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Australia": {
+      "team_cn": "澳大利亚",
+      "fifa_rank": 38,
+      "confederation": "AFC",
+      "key_players": [
+        "Mathew Ryan",
+        "Aziz Behich",
+        "Craig Goodwin",
+        "Harry Souttar"
+      ],
+      "playing_style": "身体对抗型打法，边路传中和定位球为主要得分手段",
+      "strength_rating": 69,
+      "strengths": "身体对抗能力强，防守组织纪律性好，定位球威胁大",
+      "weaknesses": "技术细腻度不足，创造力有限，面对技术型球队时较为被动",
+      "tournament": {
+        "played": 1,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "gf": 2,
+        "ga": 0,
+        "scorers": {
+          "Goodwin": 1,
+          "Duke": 1
+        }
+      }
+    },
+    "Austria": {
+      "team_cn": "奥地利",
+      "fifa_rank": 25,
+      "confederation": "UEFA",
+      "key_players": [
+        "David Alaba",
+        "Marcel Sabitzer",
+        "Christoph Baumgartner",
+        "Xaver Schlager"
+      ],
+      "playing_style": "高位压迫结合快速转换，中场拼抢凶狠，边中结合进攻",
+      "strength_rating": 79,
+      "strengths": "中场硬度高，攻守转换速度快，远射和定位球能力强",
+      "weaknesses": "后防个人能力有限，面对顶级前锋时容易被打穿",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Belgium": {
+      "team_cn": "比利时",
+      "fifa_rank": 6,
+      "confederation": "UEFA",
+      "key_players": [
+        "Kevin De Bruyne",
+        "Romelu Lukaku",
+        "Jeremy Doku",
+        "Youri Tielemans"
+      ],
+      "playing_style": "技术型传控，前场个人能力突出，中路渗透结合边路冲击",
+      "strength_rating": 86,
+      "strengths": "中场创造力顶级，前场爆点众多，进攻手段丰富",
+      "weaknesses": "后防老化问题未完全解決，整体防守协同性不稳定",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Bosnia & Herzegovina": {
+      "team_cn": "波黑",
+      "fifa_rank": 52,
+      "confederation": "UEFA",
+      "key_players": [
+        "Edin Džeko",
+        "Miralem Pjanić",
+        "Sead Kolašinac",
+        "Rade Krunić"
+      ],
+      "playing_style": "身体流打法，依赖核心老将的经验和技术，中场控制力较强",
+      "strength_rating": 70,
+      "strengths": "身体对抗不吃亏，前场有高效终结者，定位球攻防都有保障",
+      "weaknesses": "阵容老化严重，年轻球员储备不足，整体移动速度偏慢",
+      "tournament": {
+        "played": 1,
+        "wins": 0,
+        "draws": 1,
+        "losses": 0,
+        "gf": 1,
+        "ga": 1,
+        "scorers": {
+          "Lukić": 1
+        }
+      }
+    },
+    "Brazil": {
+      "team_cn": "巴西",
+      "fifa_rank": 3,
+      "confederation": "CONMEBOL",
+      "key_players": [
+        "Vinícius Júnior",
+        "Neymar",
+        "Rodrygo",
+        "Alisson",
+        "Marquinhos"
+      ],
+      "playing_style": "桑巴技术流，个人突破能力强，边路进攻犀利，攻守平衡",
+      "strength_rating": 91,
+      "strengths": "前场天赋溢出，个人能力世界顶级，阵容厚度无与伦比",
+      "weaknesses": "整体防守纪律性偶有松懈，面对密集防守时缺乏B计划",
+      "tournament": {
+        "played": 1,
+        "wins": 0,
+        "draws": 1,
+        "losses": 0,
+        "gf": 1,
+        "ga": 1,
+        "scorers": {
+          "Vinícius": 1
+        }
+      }
+    },
+    "Canada": {
+      "team_cn": "加拿大",
+      "fifa_rank": 33,
+      "confederation": "CONCACAF",
+      "key_players": [
+        "Alphonso Davies",
+        "Jonathan David",
+        "Stephen Eustáquio",
+        "Milan Borjan"
+      ],
+      "playing_style": "速度冲击型打法，边路推进极快，攻防转换节奏高",
+      "strength_rating": 75,
+      "strengths": "边路速度世界级，体能充沛，反击效率高",
+      "weaknesses": "大赛经验相对欠缺，防守体系建设不够成熟",
+      "tournament": {
+        "played": 1,
+        "wins": 0,
+        "draws": 1,
+        "losses": 0,
+        "gf": 1,
+        "ga": 1,
+        "scorers": {
+          "Larin": 1
+        }
+      }
+    },
+    "Cape Verde": {
+      "team_cn": "佛得角",
+      "fifa_rank": 66,
+      "confederation": "CAF",
+      "key_players": [
+        "Ryan Mendes",
+        "Julio Tavares",
+        "Jamiro Monteiro",
+        "Kenny Rocha Santos"
+      ],
+      "playing_style": "防守反击为主，依靠归化球员的个体能力，整体组织纪律性好",
+      "strength_rating": 62,
+      "strengths": "防守紧凑，反击速度快，团队精神顽强",
+      "weaknesses": "人员轮换深度不足，面对持续高压时容易崩盘",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Colombia": {
+      "team_cn": "哥伦比亚",
+      "fifa_rank": 14,
+      "confederation": "CONMEBOL",
+      "key_players": [
+        "Luis Díaz",
+        "James Rodríguez",
+        "Rafael Santos Borré",
+        "Davinson Sánchez"
+      ],
+      "playing_style": "技术流结合身体对抗，边路爆破能力强，定位球是重要武器",
+      "strength_rating": 80,
+      "strengths": "边锋个人能力突出，中场传威胁球能力强，后防经验丰富",
+      "weaknesses": "防守稳定性欠佳，面对快速转换时阵型容易被拉开",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Croatia": {
+      "team_cn": "克罗地亚",
+      "fifa_rank": 9,
+      "confederation": "UEFA",
+      "key_players": [
+        "Luka Modrić",
+        "Mateo Kovačić",
+        "Joško Gvardiol",
+        "Andrej Kramarić"
+      ],
+      "playing_style": "技术型中场控制，以娴熟的传导掌控比赛节奏，耐心寻找机会",
+      "strength_rating": 85,
+      "strengths": "中场控制力世界顶级，大赛心理素质过硬，战术执行力强",
+      "weaknesses": "锋线终结效率不高，核心球员年龄偏大",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Curaçao": {
+      "team_cn": "库拉索",
+      "fifa_rank": 79,
+      "confederation": "CONCACAF",
+      "key_players": [
+        "Leandro Bacuna",
+        "Juninho Bacuna",
+        "Jarchinio Antonia",
+        "Elson Hooi"
+      ],
+      "playing_style": "偏防守的实用主义打法，依靠归化球员提升个人能力支撑",
+      "strength_rating": 57,
+      "strengths": "防守组织较为紧凑，定位球有一定威胁",
+      "weaknesses": "整体实力有限，面对强队时硬实力差距明显",
+      "tournament": {
+        "played": 1,
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "gf": 1,
+        "ga": 7,
+        "scorers": {
+          "Margaritha": 1
+        }
+      }
+    },
+    "Czechia": {
+      "team_cn": "捷克",
+      "fifa_rank": 35,
+      "confederation": "UEFA",
+      "key_players": [
+        "Tomáš Souček",
+        "Patrik Schick",
+        "Vladimír Coufal",
+        "Antonín Barák"
+      ],
+      "playing_style": "身体流结合高效反击，定位球和远射为主要进攻手段",
+      "strength_rating": 74,
+      "strengths": "定位球攻防效率高，中场拦截能力强，远射有威胁",
+      "weaknesses": "创造性不足，控球能力一般，面对技术型球队时较为被动",
+      "tournament": {
+        "played": 1,
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "gf": 1,
+        "ga": 2,
+        "scorers": {
+          "Krejčí": 1
+        }
+      }
+    },
+    "DR Congo": {
+      "team_cn": "刚果(金)",
+      "fifa_rank": 56,
+      "confederation": "CAF",
+      "key_players": [
+        "Yoane Wissa",
+        "Cédric Bakambu",
+        "Chancel Mbemba",
+        "Gaël Kakuta"
+      ],
+      "playing_style": "依靠球员个人能力的前场冲击打法，身体对抗优势明显",
+      "strength_rating": 68,
+      "strengths": "身体素质出色，前场个人能力突出，反击速度快",
+      "weaknesses": "战术纪律性较弱，防守体系不稳固，发挥起伏大",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Ecuador": {
+      "team_cn": "厄瓜多尔",
+      "fifa_rank": 30,
+      "confederation": "CONMEBOL",
+      "key_players": [
+        "Moisés Caicedo",
+        "Enner Valencia",
+        "Pervis Estupiñán",
+        "Pierro Hincapié"
+      ],
+      "playing_style": "高强度逼抢结合快速转换，边路推进快，中场拦截凶狠",
+      "strength_rating": 76,
+      "strengths": "中场拼抢能力出色，整体防守硬度高，高原主场加成",
+      "weaknesses": "进攻效率偏低，创造力有限，大赛经验不足",
+      "tournament": {
+        "played": 1,
+        "wins": 0,
+        "draws": 1,
+        "losses": 0,
+        "gf": 1,
+        "ga": 1,
+        "scorers": {
+          "Caicedo": 1
+        }
+      }
+    },
+    "Egypt": {
+      "team_cn": "埃及",
+      "fifa_rank": 34,
+      "confederation": "CAF",
+      "key_players": [
+        "Mohamed Salah",
+        "Mohamed Elneny",
+        "Trezeguet",
+        "Mostafa Mohamed"
+      ],
+      "playing_style": "以防守为基础，依靠核心球星的反击威胁，整体战术纪律严明",
+      "strength_rating": 74,
+      "strengths": "拥有世界级终结者，防守纪律性好，反击效率高",
+      "weaknesses": "过度依赖Salah个人发挥，中场创造力偏弱",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "England": {
+      "team_cn": "英格兰",
+      "fifa_rank": 4,
+      "confederation": "UEFA",
+      "key_players": [
+        "Harry Kane",
+        "Jude Bellingham",
+        "Bukayo Saka",
+        "Declan Rice",
+        "Phil Foden"
+      ],
+      "playing_style": "现代传控足球，前场天赋溢出，边中结合多样，高位压迫能力强",
+      "strength_rating": 90,
+      "strengths": "阵容深度顶级，各个位置都有世界级球员，进攻手段丰富",
+      "weaknesses": "大赛关键时刻心理素质存疑，防守端偶有注意力不集中",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "France": {
+      "team_cn": "法国",
+      "fifa_rank": 2,
+      "confederation": "UEFA",
+      "key_players": [
+        "Kylian Mbappé",
+        "Antoine Griezmann",
+        "Aurélien Tchouaméni",
+        "William Saliba",
+        "Mike Maignan"
+      ],
+      "playing_style": "兼具技术、速度和力量的现代全能型打法，攻守两端极为平衡",
+      "strength_rating": 93,
+      "strengths": "个人能力全面碾压，阵容深度最恐怖，速度和力量兼备",
+      "weaknesses": "更衣室化学反应时有隐患，防守专注度偶有波动",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Germany": {
+      "team_cn": "德国",
+      "fifa_rank": 10,
+      "confederation": "UEFA",
+      "key_players": [
+        "Jamal Musiala",
+        "Florian Wirtz",
+        "İlkay Gündoğan",
+        "Antonio Rüdiger",
+        "Kai Havertz"
+      ],
+      "playing_style": "高位压迫结合控球主导，年轻化阵容跑动能力强，攻守转换快",
+      "strength_rating": 85,
+      "strengths": "青年才俊井喷，中场技术含量高，战术纪律严明",
+      "weaknesses": "中锋位置缺少传统支点，防守端面对速度型反击时有漏洞",
+      "tournament": {
+        "played": 1,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "gf": 7,
+        "ga": 1,
+        "scorers": {
+          "Woltemade": 1,
+          "Undav": 1,
+          "Wirtz": 1,
+          "Musiala": 1,
+          "Havertz": 1,
+          "Sané": 1,
+          "Adeyemi": 1
+        }
+      }
+    },
+    "Ghana": {
+      "team_cn": "加纳",
+      "fifa_rank": 55,
+      "confederation": "CAF",
+      "key_players": [
+        "Mohammed Kudus",
+        "Thomas Partey",
+        "André Ayew",
+        "Iñaki Williams"
+      ],
+      "playing_style": "身体对抗型打法，中场硬度足，前场依靠个人能力创造机会",
+      "strength_rating": 72,
+      "strengths": "中场拦截能力强，前场爆点能力突出，整体身体素质出色",
+      "weaknesses": "防守体系不够稳定，战术纪律性有待提高",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Haiti": {
+      "team_cn": "海地",
+      "fifa_rank": 87,
+      "confederation": "CONCACAF",
+      "key_players": [
+        "Duckens Nazon",
+        "Frantzdy Pierrot",
+        "Carlens Arcus",
+        "Bryan Alceus"
+      ],
+      "playing_style": "身体流防守反击，依靠前场速度制造威胁，拼抢积极",
+      "strength_rating": 55,
+      "strengths": "身体对抗不落下风，反击有一定速度威胁",
+      "weaknesses": "技术细腻度不足，面对强队时防守压力巨大",
+      "tournament": {
+        "played": 1,
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "gf": 0,
+        "ga": 1,
+        "scorers": {}
+      }
+    },
+    "Iran": {
+      "team_cn": "伊朗",
+      "fifa_rank": 20,
+      "confederation": "AFC",
+      "key_players": [
+        "Mehdi Taremi",
+        "Sardar Azmoun",
+        "Alireza Jahanbakhsh",
+        "Ehsan Hajsafi"
+      ],
+      "playing_style": "防守硬度极高的实用主义足球，反击效率高，定位球是重要武器",
+      "strength_rating": 73,
+      "strengths": "防守组织顶级，身体对抗能力强，意志品质顽强",
+      "weaknesses": "控球和创造力不足，面对密集防守时缺乏破局手段",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Iraq": {
+      "team_cn": "伊拉克",
+      "fifa_rank": 59,
+      "confederation": "AFC",
+      "key_players": [
+        "Aymen Hussein",
+        "Ibrahim Bayesh",
+        "Ali Adnan",
+        "Jalal Hassan"
+      ],
+      "playing_style": "整体防守加快速转换，边路传中是主要进攻套路",
+      "strength_rating": 66,
+      "strengths": "团队凝聚力强，防守意志坚定，定位球有一定威胁",
+      "weaknesses": "个人能力天花板不高，技术水平相对粗糙",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Ivory Coast": {
+      "team_cn": "科特迪瓦",
+      "fifa_rank": 42,
+      "confederation": "CAF",
+      "key_players": [
+        "Sébastien Haller",
+        "Franck Kessié",
+        "Nicolas Pépé",
+        "Serge Aurier"
+      ],
+      "playing_style": "身体与技术兼备的全能型打法，边路冲击力强，中场硬度高",
+      "strength_rating": 76,
+      "strengths": "球员身体素质出色，攻守两端都有顶级个体，阵容经验丰富",
+      "weaknesses": "整体战术执行持续性不足，发挥起伏较大",
+      "tournament": {
+        "played": 1,
+        "wins": 0,
+        "draws": 1,
+        "losses": 0,
+        "gf": 1,
+        "ga": 1,
+        "scorers": {
+          "Haller": 1
+        }
+      }
+    },
+    "Japan": {
+      "team_cn": "日本",
+      "fifa_rank": 18,
+      "confederation": "AFC",
+      "key_players": [
+        "Takefusa Kubo",
+        "Daichi Kamada",
+        "Wataru Endō",
+        "Kaoru Mitoma",
+        "Ritsu Dōan"
+      ],
+      "playing_style": "传控技术流，整体跑动能力强，攻守转换速度快，战术执行力高",
+      "strength_rating": 78,
+      "strengths": "整体战术素养亚洲顶级，球员技术出色，跑动能力强",
+      "weaknesses": "身体对抗不占优，中锋终结能力偏弱，防守高空球有隐患",
+      "tournament": {
+        "played": 1,
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "gf": 1,
+        "ga": 2,
+        "scorers": {
+          "三笘薫": 1
+        }
+      }
+    },
+    "Jordan": {
+      "team_cn": "约旦",
+      "fifa_rank": 64,
+      "confederation": "AFC",
+      "key_players": [
+        "Musa Al-Taamari",
+        "Yazan Al-Naimat",
+        "Ali Olwan",
+        "Yousef Al-Rawashdeh"
+      ],
+      "playing_style": "防守反击型打法，依靠核心球员的个人能力快速推进",
+      "strength_rating": 63,
+      "strengths": "防守纪律性好，反击效率高，团队意志顽强",
+      "weaknesses": "整体技术能力有限，面对高压时出球困难",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Mexico": {
+      "team_cn": "墨西哥",
+      "fifa_rank": 15,
+      "confederation": "CONCACAF",
+      "key_players": [
+        "Julián Quiñones",
+        "Raúl Jiménez",
+        "Hirving Lozano",
+        "Edson Álvarez"
+      ],
+      "playing_style": "快速攻守转换，边路爆破，定位球威胁大",
+      "strength_rating": 82,
+      "strengths": "身体对抗强，边路速度快，大赛经验丰富",
+      "weaknesses": "防守高空球有隐患，面对高压时后场出球不稳",
+      "tournament": {
+        "played": 1,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "gf": 2,
+        "ga": 0,
+        "scorers": {
+          "Quiñones": 1,
+          "Jiménez": 1
+        }
+      }
+    },
+    "Morocco": {
+      "team_cn": "摩洛哥",
+      "fifa_rank": 12,
+      "confederation": "CAF",
+      "key_players": [
+        "Achraf Hakimi",
+        "Hakim Ziyech",
+        "Sofyan Amrabat",
+        "Youssef En-Nesyri",
+        "Noussair Mazraoui"
+      ],
+      "playing_style": "防守稳固的实用主义足球，边路推进快，中场拦截凶狠",
+      "strength_rating": 81,
+      "strengths": "防守体系极为牢固，边后卫助攻能力强，中场绞杀能力顶级",
+      "weaknesses": "进攻创造性偏弱，得分效率有待提高",
+      "tournament": {
+        "played": 1,
+        "wins": 0,
+        "draws": 1,
+        "losses": 0,
+        "gf": 1,
+        "ga": 1,
+        "scorers": {
+          "Saibari": 1
+        }
+      }
+    },
+    "Netherlands": {
+      "team_cn": "荷兰",
+      "fifa_rank": 7,
+      "confederation": "UEFA",
+      "key_players": [
+        "Virgil van Dijk",
+        "Frenkie de Jong",
+        "Memphis Depay",
+        "Xavi Simons",
+        "Cody Gakpo"
+      ],
+      "playing_style": "全攻全守的现代版本，控球主导，后防稳固，边翼卫助攻能力强",
+      "strength_rating": 87,
+      "strengths": "后防世界级，中场控制力强，攻守体系成熟",
+      "weaknesses": "中锋位置缺少稳定得分点，前场终结效率波动大",
+      "tournament": {
+        "played": 1,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "gf": 2,
+        "ga": 1,
+        "scorers": {
+          "Gakpo": 1,
+          "Dumfries": 1
+        }
+      }
+    },
+    "New Zealand": {
+      "team_cn": "新西兰",
+      "fifa_rank": 94,
+      "confederation": "OFC",
+      "key_players": [
+        "Chris Wood",
+        "Joe Bell",
+        "Liberato Cacace",
+        "Sarpreet Singh"
+      ],
+      "playing_style": "身体流长传冲吊，依靠中锋支点和第二落点拼抢制造机会",
+      "strength_rating": 59,
+      "strengths": "身体对抗有优势，中锋能力强，定位球威胁大",
+      "weaknesses": "技战术水平有限，面对技术型球队时全面被动",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Norway": {
+      "team_cn": "挪威",
+      "fifa_rank": 44,
+      "confederation": "UEFA",
+      "key_players": [
+        "Erling Haaland",
+        "Martin Ødegaard",
+        "Alexander Sørloth",
+        "Morten Thorsby"
+      ],
+      "playing_style": "直接高效型打法，前场巨星驱动的进攻体系，边路传中为主",
+      "strength_rating": 77,
+      "strengths": "拥有世界顶级终结者，中场创造力强，高空球优势明显",
+      "weaknesses": "后防线个人能力有限，面对快速反击时防守空档大",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Panama": {
+      "team_cn": "巴拿马",
+      "fifa_rank": 45,
+      "confederation": "CONCACAF",
+      "key_players": [
+        "Aníbal Godoy",
+        "Adalberto Carrasquilla",
+        "José Fajardo",
+        "Ismael Díaz"
+      ],
+      "playing_style": "身体对抗型防守足球，定位球和反击是主要得分手段",
+      "strength_rating": 64,
+      "strengths": "防守组织硬朗，拼抢积极，定位球有一定威胁",
+      "weaknesses": "技术水平有限，面对强队时控球率极低",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Paraguay": {
+      "team_cn": "巴拉圭",
+      "fifa_rank": 47,
+      "confederation": "CONMEBOL",
+      "key_players": [
+        "Miguel Almirón",
+        "Julio Enciso",
+        "Gustavo Gómez",
+        "Derlis González"
+      ],
+      "playing_style": "防守硬朗的南美实用主义足球，反击犀利，拼抢凶狠",
+      "strength_rating": 70,
+      "strengths": "防守硬度高，中场拼抢凶狠，反击速度快",
+      "weaknesses": "控球能力偏弱，进攻创造性不足，发挥不稳定",
+      "tournament": {
+        "played": 1,
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "gf": 1,
+        "ga": 4,
+        "scorers": {
+          "Bobadilla": 1
+        }
+      }
+    },
+    "Portugal": {
+      "team_cn": "葡萄牙",
+      "fifa_rank": 8,
+      "confederation": "UEFA",
+      "key_players": [
+        "Cristiano Ronaldo",
+        "Bruno Fernandes",
+        "Bernardo Silva",
+        "Rúben Dias",
+        "Rafael Leão"
+      ],
+      "playing_style": "技术型传控渗透，中场创造力丰富，边中结合多变",
+      "strength_rating": 86,
+      "strengths": "中场技术含量顶级，阵容深度厚，前场选择多",
+      "weaknesses": "后防稳定性偶有波动，面对高压逼抢时出球有隐患",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Qatar": {
+      "team_cn": "卡塔尔",
+      "fifa_rank": 51,
+      "confederation": "AFC",
+      "key_players": [
+        "Akram Afif",
+        "Almoez Ali",
+        "Hassan Al-Haydos",
+        "Abdulaziz Hatem"
+      ],
+      "playing_style": "传控技术流，短传渗透为主，整体移动灵活",
+      "strength_rating": 67,
+      "strengths": "整体传控体系成熟，球员默契度高，技术比较细腻",
+      "weaknesses": "身体对抗能力偏弱，面对高强度压迫时失误增多",
+      "tournament": {
+        "played": 1,
+        "wins": 0,
+        "draws": 1,
+        "losses": 0,
+        "gf": 1,
+        "ga": 1,
+        "scorers": {
+          "Khoukhi": 1
+        }
+      }
+    },
+    "Saudi Arabia": {
+      "team_cn": "沙特阿拉伯",
+      "fifa_rank": 53,
+      "confederation": "AFC",
+      "key_players": [
+        "Salem Al-Dawsari",
+        "Feras Al-Brikan",
+        "Saud Abdulhamid",
+        "Mohamed Kanno"
+      ],
+      "playing_style": "技术流传控，边路个人能力强，整体配合默契",
+      "strength_rating": 68,
+      "strengths": "球员技术功底扎实，边路突破能力突出，团队配合默契",
+      "weaknesses": "防守高强度比赛经验不足，身体对抗不占优",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Scotland": {
+      "team_cn": "苏格兰",
+      "fifa_rank": 36,
+      "confederation": "UEFA",
+      "key_players": [
+        "Andy Robertson",
+        "Scott McTominay",
+        "John McGinn",
+        "Kieran Tierney"
+      ],
+      "playing_style": "硬朗身体流结合快速转换，高位压迫积极，远射和定位球威胁大",
+      "strength_rating": 73,
+      "strengths": "中场跑动能力强，拼抢凶狠，定位球攻防效率高",
+      "weaknesses": "锋线终结能力不足，后防速度偏慢",
+      "tournament": {
+        "played": 1,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "gf": 1,
+        "ga": 0,
+        "scorers": {
+          "McGinn": 1
+        }
+      }
+    },
+    "Senegal": {
+      "team_cn": "塞内加尔",
+      "fifa_rank": 19,
+      "confederation": "CAF",
+      "key_players": [
+        "Sadio Mané",
+        "Kalidou Koulibaly",
+        "Idrissa Gueye",
+        "Ismaila Sarr",
+        "Édouard Mendy"
+      ],
+      "playing_style": "身体与技术兼备的全面型打法，攻守平衡，转换速度快",
+      "strength_rating": 79,
+      "strengths": "身体素质和运动能力顶级，前中后三条线都有顶级球员",
+      "weaknesses": "整体战术纪律偶有松懈，面对严密防守时缺乏耐心",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "South Africa": {
+      "team_cn": "南非",
+      "fifa_rank": 58,
+      "confederation": "CAF",
+      "key_players": [
+        "Percy Tau",
+        "Lyle Foster",
+        "Teboho Mokoena",
+        "Ronwen Williams"
+      ],
+      "playing_style": "防守反击为主，前场速度快，整体拼抢积极",
+      "strength_rating": 68,
+      "strengths": "球员身体素质好，反击速度快，防守组织有一定纪律性",
+      "weaknesses": "中场创造力不足，大赛经验相对欠缺",
+      "tournament": {
+        "played": 1,
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "gf": 0,
+        "ga": 2,
+        "scorers": {}
+      }
+    },
+    "South Korea": {
+      "team_cn": "韩国",
+      "fifa_rank": 22,
+      "confederation": "AFC",
+      "key_players": [
+        "Son Heung-min",
+        "Kim Min-jae",
+        "Lee Kang-in",
+        "Hwang Hee-chan"
+      ],
+      "playing_style": "高强度跑动型打法，攻守转换极快，整体逼抢积极",
+      "strength_rating": 76,
+      "strengths": "体能和跑动能力亚洲顶级，核心球员世界级，团队凝聚力强",
+      "weaknesses": "面对身体流球队对抗不占优，后防守转偶有漏洞",
+      "tournament": {
+        "played": 1,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "gf": 2,
+        "ga": 1,
+        "scorers": {
+          "黄仁范": 1,
+          "吴贤揆": 1
+        }
+      }
+    },
+    "Spain": {
+      "team_cn": "西班牙",
+      "fifa_rank": 5,
+      "confederation": "UEFA",
+      "key_players": [
+        "Rodri",
+        "Pedri",
+        "Lamine Yamal",
+        "Álvaro Morata",
+        "Dani Carvajal"
+      ],
+      "playing_style": "极致传控足球，短传渗透统治中场，边中结合寻找空间",
+      "strength_rating": 89,
+      "strengths": "中场控制力世界第一梯队，技术细腻度顶级，青训体系输送稳定",
+      "weaknesses": "缺少顶级终结者，面对极致防守时传控变成无效控球",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Sweden": {
+      "team_cn": "瑞典",
+      "fifa_rank": 26,
+      "confederation": "UEFA",
+      "key_players": [
+        "Alexander Isak",
+        "Dejan Kulusevski",
+        "Victor Lindelöf",
+        "Emil Forsberg"
+      ],
+      "playing_style": "北欧传统身体流结合现代传控，边路传中和定位球威胁大",
+      "strength_rating": 76,
+      "strengths": "身体对抗优势明显，防守组织稳固，前场个人能力突出",
+      "weaknesses": "控球稳定性不足，面对快速的防守反击时转身偏慢",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Switzerland": {
+      "team_cn": "瑞士",
+      "fifa_rank": 16,
+      "confederation": "UEFA",
+      "key_players": [
+        "Granit Xhaka",
+        "Manuel Akanji",
+        "Xherdan Shaqiri",
+        "Breel Embolo"
+      ],
+      "playing_style": "防守稳固的实用主义足球，纪律严明，定位球和反击高效",
+      "strength_rating": 80,
+      "strengths": "防守组织纪律性顶级，团队执行力强，大赛发挥稳定",
+      "weaknesses": "进攻创造性不足，面对同样防守好的球队时破局能力有限",
+      "tournament": {
+        "played": 1,
+        "wins": 0,
+        "draws": 1,
+        "losses": 0,
+        "gf": 1,
+        "ga": 1,
+        "scorers": {
+          "Embolo": 1
+        }
+      }
+    },
+    "Tunisia": {
+      "team_cn": "突尼斯",
+      "fifa_rank": 32,
+      "confederation": "CAF",
+      "key_players": [
+        "Ellyes Skhiri",
+        "Wahbi Khazri",
+        "Aïssa Laïdouni",
+        "Youssef Msakni"
+      ],
+      "playing_style": "防守型实用主义足球，中场拼抢凶狠，反击效率高",
+      "strength_rating": 72,
+      "strengths": "防守组织硬朗，中场拦截能力强，团队配合默契",
+      "weaknesses": "前场个人能力有限，得分效率偏低",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Turkey": {
+      "team_cn": "土耳其",
+      "fifa_rank": 29,
+      "confederation": "UEFA",
+      "key_players": [
+        "Hakan Çalhanoğlu",
+        "Arda Güler",
+        "Orkun Kökçü",
+        "Çağlar Söyüncü",
+        "Merih Demiral"
+      ],
+      "playing_style": "充满激情的高强度攻守转换，远射犀利，定位球和身体对抗有优势",
+      "strength_rating": 77,
+      "strengths": "中场创造力强，远射威胁大，主场气势加成，年轻球员天赋高",
+      "weaknesses": "防守纪律性有待提高，情绪管理不稳定，发挥起伏大",
+      "tournament": {
+        "played": 1,
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "gf": 0,
+        "ga": 2,
+        "scorers": {}
+      }
+    },
+    "USA": {
+      "team_cn": "美国",
+      "fifa_rank": 13,
+      "confederation": "CONCACAF",
+      "key_players": [
+        "Christian Pulisic",
+        "Weston McKennie",
+        "Tyler Adams",
+        "Gio Reyna",
+        "Folarin Balogun"
+      ],
+      "playing_style": "现代高节奏足球，身体对抗强，攻守转换速度快，整体压迫积极",
+      "strength_rating": 81,
+      "strengths": "运动能力出众，中场硬度高，年轻球员上升势头猛",
+      "weaknesses": "大赛经验总体不足，防守端专注度偶有下降",
+      "tournament": {
+        "played": 1,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "gf": 4,
+        "ga": 1,
+        "scorers": {
+          "Balogun": 1,
+          "Reyna": 1
+        }
+      }
+    },
+    "Uruguay": {
+      "team_cn": "乌拉圭",
+      "fifa_rank": 11,
+      "confederation": "CONMEBOL",
+      "key_players": [
+        "Federico Valverde",
+        "Darwin Núñez",
+        "Ronald Araújo",
+        "Rodrigo Bentancur",
+        "Felipe Carballo"
+      ],
+      "playing_style": "硬朗南美足球的典型代表，拼抢凶悍，防守坚固，反击致命",
+      "strength_rating": 83,
+      "strengths": "防守硬度南美顶级，中场全能型球员多，锋线把握机会能力强",
+      "weaknesses": "控球能力不是强项，面对同样硬朗的欧洲球队时技术劣势显现",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    },
+    "Uzbekistan": {
+      "team_cn": "乌兹别克斯坦",
+      "fifa_rank": 68,
+      "confederation": "AFC",
+      "key_players": [
+        "Eldor Shomurodov",
+        "Oston Urunov",
+        "Odiljon Hamrobekov",
+        "Jaloliddin Masharipov"
+      ],
+      "playing_style": "技术流传控打法，中场组织有序，依靠核心球员的个人能力",
+      "strength_rating": 65,
+      "strengths": "球员技术功底扎实，中场传导能力不错，团队配合有一定默契",
+      "weaknesses": "身体对抗偏弱，防守高强度比赛经验不足，整体移动速度偏慢",
+      "tournament": {
+        "played": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "gf": 0,
+        "ga": 0,
+        "scorers": {}
+      }
+    }
+  }
+}

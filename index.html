@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 世界杯预测 | World Cup 2026 Predictions</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- Header -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <header class="header">
+    <div class="header-content">
+      <div class="header-title">
+        <span class="header-emoji">⚽</span>
+        <h1>2026 世界杯预测</h1>
+        <span class="header-sub">FIFA World Cup 2026 · USA / Canada / Mexico</span>
+      </div>
+      <div class="header-time" id="header-time">
+        🕐 <span id="bj-time">加载中...</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- Tab Navigation -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <nav class="tab-nav">
+    <button class="tab-btn active" data-tab="predictions">
+      📊 明日预测
+    </button>
+    <button class="tab-btn" data-tab="standings">
+      🏆 积分榜
+    </button>
+    <button class="tab-btn" data-tab="elo">
+      📈 Elo 排名
+    </button>
+    <button class="tab-btn" data-tab="bracket">
+      🏟 淘汰赛对阵
+    </button>
+    <button class="tab-btn" data-tab="accuracy">
+      📐 准确率
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- Tab Content Panels -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <main class="main-content">
+    <!-- Predictions Tab -->
+    <section id="tab-predictions" class="tab-content active">
+      <div class="loading-spinner" id="pred-loading">
+        <div class="spinner"></div>
+        <p>加载预测数据...</p>
+      </div>
+      <div id="pred-content" style="display:none;"></div>
+    </section>
+
+    <!-- Standings Tab -->
+    <section id="tab-standings" class="tab-content">
+      <div class="loading-spinner" id="std-loading">
+        <div class="spinner"></div>
+        <p>加载积分榜...</p>
+      </div>
+      <div id="std-content" style="display:none;"></div>
+    </section>
+
+    <!-- Elo Tab -->
+    <section id="tab-elo" class="tab-content">
+      <div class="loading-spinner" id="elo-loading">
+        <div class="spinner"></div>
+        <p>加载 Elo 排名...</p>
+      </div>
+      <div id="elo-content" style="display:none;"></div>
+    </section>
+
+    <!-- Bracket Tab -->
+    <section id="tab-bracket" class="tab-content">
+      <div class="loading-spinner" id="brk-loading">
+        <div class="spinner"></div>
+        <p>加载对阵数据...</p>
+      </div>
+      <div id="brk-content" style="display:none;"></div>
+    </section>
+
+    <!-- Accuracy Tab -->
+    <section id="tab-accuracy" class="tab-content">
+      <div class="loading-spinner" id="acc-loading">
+        <div class="spinner"></div>
+        <p>加载准确率数据...</p>
+      </div>
+      <div id="acc-content" style="display:none;"></div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- Footer -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <p>数据来源：FIFA 排名 + 已完赛结果 + AI 深度分析</p>
+    <p>生成时间：<span id="footer-updated">—</span> · 纯静态网页 · 无 API 调用</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/predictions.js"></script>
+  <script src="js/standings.js"></script>
+  <script src="js/elo.js"></script>
+  <script src="js/bracket.js"></script>
+  <script src="js/accuracy.js"></script>
+</body>
+</html>

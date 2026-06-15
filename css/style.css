@@ -1,0 +1,834 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   World Cup 2026 Prediction — Football-Themed Stylesheet
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ── CSS Custom Properties ───────────────────────────────────────────── */
+:root {
+  --green-dark: #1a5632;
+  --green-mid: #2d8a4e;
+  --green-light: #4caf50;
+  --gold: #d4a843;
+  --gold-light: #f0d78c;
+  --navy: #0d1b2a;
+  --navy-light: #1b2838;
+  --white: #ffffff;
+  --off-white: #f5f5f0;
+  --gray-100: #f0f0ec;
+  --gray-200: #e0e0d8;
+  --gray-300: #c0c0b8;
+  --gray-500: #888;
+  --gray-700: #555;
+  --gray-900: #222;
+  --red: #c62828;
+  --blue: #1565c0;
+  --orange: #e65100;
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow: 0 2px 8px rgba(0,0,0,0.12);
+  --shadow-lg: 0 4px 20px rgba(0,0,0,0.15);
+
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+           "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+
+  --max-width: 1200px;
+}
+
+/* ── Reset & Base ────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 15px; }
+
+body {
+  font-family: var(--font);
+  background: linear-gradient(135deg, #f5f5f0 0%, #e8e8e0 100%);
+  color: var(--gray-900);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* ── Header ──────────────────────────────────────────────────────────── */
+.header {
+  background: linear-gradient(135deg, var(--navy) 0%, #1a3a2a 50%, var(--green-dark) 100%);
+  color: var(--white);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-lg);
+}
+
+.header-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.header-title h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  display: inline;
+}
+
+.header-emoji { font-size: 1.4rem; margin-right: 6px; }
+
+.header-sub {
+  display: block;
+  font-size: 0.75rem;
+  opacity: 0.75;
+  margin-top: 2px;
+  font-weight: 400;
+}
+
+.header-time {
+  font-size: 0.9rem;
+  background: rgba(255,255,255,0.1);
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  backdrop-filter: blur(4px);
+}
+
+#bj-time { font-weight: 600; }
+
+/* ── Tab Navigation ──────────────────────────────────────────────────── */
+.tab-nav {
+  display: flex;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  gap: 4px;
+  background: var(--white);
+  border-bottom: 2px solid var(--gray-200);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  position: sticky;
+  top: 72px;
+  z-index: 99;
+}
+
+.tab-btn {
+  flex-shrink: 0;
+  padding: 14px 20px;
+  border: none;
+  background: transparent;
+  font-size: 0.95rem;
+  font-family: var(--font);
+  cursor: pointer;
+  color: var(--gray-700);
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.tab-btn:hover { color: var(--green-dark); background: var(--gray-100); }
+
+.tab-btn.active {
+  color: var(--green-dark);
+  border-bottom-color: var(--green-mid);
+  font-weight: 600;
+}
+
+/* ── Main Content ────────────────────────────────────────────────────── */
+.main-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* ── Loading Spinner ─────────────────────────────────────────────────── */
+.loading-spinner {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--gray-500);
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--gray-200);
+  border-top-color: var(--green-mid);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 16px;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Cards ────────────────────────────────────────────────────────────── */
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  margin-bottom: 20px;
+  border: 1px solid var(--gray-200);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.card-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-group {
+  background: var(--green-dark);
+  color: var(--white);
+}
+
+.badge-time {
+  background: var(--navy-light);
+  color: var(--white);
+}
+
+.badge-venue {
+  background: var(--gray-200);
+  color: var(--gray-700);
+}
+
+/* ── Match Prediction Card ───────────────────────────────────────────── */
+.match-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  margin-bottom: 28px;
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+}
+
+.match-card-header {
+  background: linear-gradient(135deg, var(--navy), var(--green-dark));
+  color: var(--white);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.match-team {
+  text-align: center;
+  min-width: 120px;
+}
+
+.match-team-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.match-team-en {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-top: 2px;
+}
+
+.match-vs {
+  font-size: 2rem;
+  font-weight: 900;
+  opacity: 0.8;
+}
+
+.match-meta {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 12px 24px;
+  background: var(--gray-100);
+  font-size: 0.85rem;
+  color: var(--gray-700);
+}
+
+.match-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.match-card-body {
+  padding: 20px 24px;
+}
+
+/* ── Analysis Sections ───────────────────────────────────────────────── */
+.analysis-section {
+  margin-bottom: 20px;
+}
+
+.analysis-section:last-child { margin-bottom: 0; }
+
+.analysis-section-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--green-dark);
+  margin-bottom: 10px;
+  padding-left: 12px;
+  border-left: 4px solid var(--green-mid);
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.analysis-section-title:hover { color: var(--green-mid); }
+
+.analysis-section-title .toggle-icon {
+  font-size: 0.75rem;
+  transition: transform 0.2s;
+}
+
+.analysis-section-title.collapsed .toggle-icon {
+  transform: rotate(-90deg);
+}
+
+.analysis-content {
+  padding-left: 16px;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--gray-900);
+}
+
+.analysis-content.collapsed { display: none; }
+
+/* ── Markdown-like rendered content ──────────────────────────────────── */
+.analysis-content h2 { font-size: 1.1rem; color: var(--navy); margin: 12px 0 6px; }
+.analysis-content h3 { font-size: 1rem; color: var(--gray-700); margin: 10px 0 4px; }
+.analysis-content strong { color: var(--navy); }
+.analysis-content p { margin-bottom: 8px; }
+.analysis-content ul, .analysis-content ol { padding-left: 20px; margin-bottom: 8px; }
+.analysis-content li { margin-bottom: 4px; }
+
+/* ── Prediction Box ──────────────────────────────────────────────────── */
+.prediction-box {
+  background: linear-gradient(135deg, #f0f7f1, #fafaf5);
+  border: 2px solid var(--green-light);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-top: 16px;
+}
+
+/* Probability Bars */
+.prob-bars {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.prob-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--white);
+  transition: width 0.4s ease;
+  min-width: 0;
+}
+
+.prob-bar.home { background: var(--green-mid); }
+.prob-bar.draw { background: var(--gray-500); }
+.prob-bar.away { background: var(--blue); }
+
+.prob-legend {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+
+.prob-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.prob-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.prob-dot.home { background: var(--green-mid); }
+.prob-dot.draw { background: var(--gray-500); }
+.prob-dot.away { background: var(--blue); }
+
+/* Scoreline Cards */
+.scorelines {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.scoreline-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-200);
+  min-width: 100px;
+}
+
+.scoreline-card.top { border-color: var(--gold); background: #fffdf5; }
+
+.scoreline-rank {
+  font-size: 0.7rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.scoreline-score {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--navy);
+  font-variant-numeric: tabular-nums;
+}
+
+.scoreline-pct {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--green-mid);
+  margin-top: 2px;
+}
+
+/* Predicted Score */
+.predicted-score {
+  text-align: center;
+  margin: 20px 0 12px;
+}
+
+.predicted-score-label {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin-bottom: 4px;
+}
+
+.predicted-score-value {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--green-dark);
+  letter-spacing: 0.04em;
+}
+
+/* Confidence Stars */
+.confidence {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.confidence-stars { color: var(--gold); letter-spacing: 3px; font-size: 1.3rem; }
+
+.confidence-label {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  margin-left: 8px;
+}
+
+/* ── Tables ──────────────────────────────────────────────────────────── */
+.table-container { overflow-x: auto; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+thead th {
+  background: var(--navy);
+  color: var(--white);
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  white-space: nowrap;
+}
+
+thead th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+thead th.sortable:hover { background: #1a3550; }
+
+thead th .sort-arrow { margin-left: 4px; font-size: 0.7rem; }
+
+tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+tbody tr:hover { background: var(--gray-100); }
+
+tbody tr:nth-child(even) { background: #fafaf7; }
+tbody tr:nth-child(even):hover { background: var(--gray-100); }
+
+/* Team cell */
+.team-cell { font-weight: 600; }
+.team-cell .team-en { font-size: 0.75rem; color: var(--gray-500); display: block; }
+
+/* Change indicators */
+.change-up { color: var(--green-mid); font-weight: 600; }
+.change-down { color: var(--red); font-weight: 600; }
+.change-zero { color: var(--gray-500); }
+
+/* ── Group Grid ──────────────────────────────────────────────────────── */
+.group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+}
+
+.group-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+}
+
+.group-card-header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.group-card table { font-size: 0.82rem; }
+.group-card thead th { background: var(--navy-light); font-size: 0.75rem; padding: 7px 8px; }
+.group-card tbody td { padding: 7px 8px; }
+
+/* ── Best Thirds ──────────────────────────────────────────────────────── */
+.thirds-section {
+  margin-top: 32px;
+}
+
+.thirds-grid {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.third-card {
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-200);
+  min-width: 160px;
+  text-align: center;
+}
+
+.third-card.advancing { border-left: 4px solid var(--green-mid); background: #f0faf2; }
+.third-card.bubble { border-left: 4px solid var(--orange); background: #fffaf5; }
+.third-card.out { border-left: 4px solid var(--gray-300); opacity: 0.6; }
+
+.third-rank { font-size: 0.75rem; color: var(--gray-500); }
+.third-team { font-weight: 700; font-size: 1rem; margin: 2px 0; }
+.third-group { font-size: 0.8rem; color: var(--gray-500); }
+.third-pts { font-size: 0.85rem; color: var(--gray-700); }
+
+/* ── Bracket Layout ──────────────────────────────────────────────────── */
+.bracket-section {
+  margin-bottom: 24px;
+}
+
+.bracket-section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--gray-200);
+}
+
+.bracket-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.bracket-team-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--white);
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-200);
+}
+
+.bracket-seed {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--green-dark);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.bracket-team-info {
+  flex: 1;
+}
+
+.bracket-team-name {
+  font-weight: 700;
+}
+
+.bracket-team-detail {
+  font-size: 0.78rem;
+  color: var(--gray-500);
+}
+
+/* ── Stats Cards ──────────────────────────────────────────────────────── */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-200);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--green-dark);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin-top: 4px;
+}
+
+/* ── Calibration Chart ────────────────────────────────────────────────── */
+.calibration-chart {
+  margin: 16px 0;
+}
+
+.cal-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.cal-label {
+  width: 70px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gray-700);
+  text-align: right;
+}
+
+.cal-bar-container {
+  flex: 1;
+  height: 28px;
+  background: var(--gray-200);
+  border-radius: var(--radius-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.cal-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--white);
+  transition: width 0.5s ease;
+}
+
+.cal-bar-fill.over { background: var(--red); }
+.cal-bar-fill.under { background: var(--blue); }
+.cal-bar-fill.good { background: var(--green-mid); }
+
+.cal-n {
+  width: 36px;
+  font-size: 0.75rem;
+  color: var(--gray-500);
+}
+
+/* ── Star Calibration ─────────────────────────────────────────────────── */
+.star-cal-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  background: var(--gray-100);
+  border-radius: var(--radius-sm);
+}
+
+.star-cal-stars {
+  width: 110px;
+  color: var(--gold);
+  font-size: 0.95rem;
+}
+
+.star-cal-bar {
+  flex: 1;
+  height: 20px;
+  background: var(--gray-200);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.star-cal-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--green-mid), var(--green-light));
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.star-cal-pct {
+  width: 80px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+/* ── Recent Predictions ───────────────────────────────────────────────── */
+.pred-status { text-align: center; }
+.pred-status.exact { color: var(--green-mid); }
+.pred-status.outcome { color: var(--orange); }
+.pred-status.wrong { color: var(--red); }
+
+/* ── No Data ──────────────────────────────────────────────────────────── */
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: var(--gray-500);
+  font-size: 1rem;
+}
+
+/* ── Footer ───────────────────────────────────────────────────────────── */
+.footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--gray-500);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--gray-200);
+  margin-top: 40px;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Search Box ───────────────────────────────────────────────────────── */
+.search-box {
+  width: 100%;
+  max-width: 360px;
+  padding: 10px 16px;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-family: var(--font);
+  margin-bottom: 16px;
+  transition: border-color 0.2s;
+}
+
+.search-box:focus {
+  outline: none;
+  border-color: var(--green-mid);
+}
+
+/* ── Responsive ────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  html { font-size: 14px; }
+
+  .header-content {
+    padding: 12px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tab-nav {
+    padding: 0 8px;
+    top: 100px;
+  }
+
+  .tab-btn {
+    padding: 12px 14px;
+    font-size: 0.85rem;
+  }
+
+  .main-content { padding: 16px 8px; }
+
+  .match-card-header { flex-direction: column; gap: 8px; padding: 16px; }
+
+  .match-vs { font-size: 1.3rem; }
+
+  .group-grid { grid-template-columns: 1fr; }
+
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .bracket-grid { grid-template-columns: 1fr; }
+
+  .prob-bars { height: 28px; }
+
+  .predicted-score-value { font-size: 2rem; }
+}
+
+@media (max-width: 480px) {
+  .stats-grid { grid-template-columns: 1fr; }
+
+  .scorelines { flex-direction: column; }
+
+  .tab-btn { padding: 10px 10px; font-size: 0.78rem; }
+}
