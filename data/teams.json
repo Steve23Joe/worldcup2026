@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 16:12 BJT",
+  "updated_at": "2026-06-15 16:36 BJT",
   "teams": {
     "Algeria": {
       "team_cn": "阿尔及利亚",
@@ -1055,13 +1055,16 @@
       "strengths": "身体对抗优势明显，防守组织稳固，前场个人能力突出",
       "weaknesses": "控球稳定性不足，面对快速的防守反击时转身偏慢",
       "tournament": {
-        "played": 0,
-        "wins": 0,
+        "played": 1,
+        "wins": 1,
         "draws": 0,
         "losses": 0,
-        "gf": 0,
-        "ga": 0,
-        "scorers": {}
+        "gf": 2,
+        "ga": 1,
+        "scorers": {
+          "Isak": 1,
+          "Gyökeres": 1
+        }
       }
     },
     "Switzerland": {
@@ -1105,13 +1108,15 @@
       "strengths": "防守组织硬朗，中场拦截能力强，团队配合默契",
       "weaknesses": "前场个人能力有限，得分效率偏低",
       "tournament": {
-        "played": 0,
+        "played": 1,
         "wins": 0,
         "draws": 0,
-        "losses": 0,
-        "gf": 0,
-        "ga": 0,
-        "scorers": {}
+        "losses": 1,
+        "gf": 1,
+        "ga": 2,
+        "scorers": {
+          "Msakni": 1
+        }
       }
     },
     "Turkey": {

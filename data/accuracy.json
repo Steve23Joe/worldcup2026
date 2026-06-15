@@ -1,5 +1,30 @@
 {
-  "updated_at": "2026-06-15 16:12 BJT",
-  "stats": {},
-  "recent": []
+  "updated_at": "2026-06-15 16:36 BJT",
+  "stats": {
+    "total": 1,
+    "correct_outcome": 1,
+    "outcome_accuracy": 100.0,
+    "exact_score": 0,
+    "exact_accuracy": 0.0,
+    "avg_goal_error": 1.0,
+    "brier_score": null,
+    "calibration": null,
+    "star_calibration": null,
+    "last_updated": "2026-06-15 16:34"
+  },
+  "recent": [
+    {
+      "home": "Sweden",
+      "home_cn": "瑞典",
+      "away": "Tunisia",
+      "away_cn": "突尼斯",
+      "group": "F",
+      "date": "2026-06-15",
+      "predicted_score": "?",
+      "actual_score": "2-1",
+      "outcome_correct": true,
+      "exact_score": false,
+      "goal_error": 1
+    }
+  ]
 }

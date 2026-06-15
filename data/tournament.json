@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 16:12 BJT",
+  "updated_at": "2026-06-15 16:36 BJT",
   "groups": {
     "A": [
       {
@@ -225,22 +225,12 @@
       {
         "team": "Sweden",
         "team_cn": "瑞典",
-        "played": 0,
-        "pts": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "elo": 1520
-      },
-      {
-        "team": "Tunisia",
-        "team_cn": "突尼斯",
-        "played": 0,
-        "pts": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "elo": 1440
+        "played": 1,
+        "pts": 3,
+        "gf": 2,
+        "ga": 1,
+        "gd": 1,
+        "elo": 1543
       },
       {
         "team": "Japan",
@@ -251,6 +241,16 @@
         "ga": 2,
         "gd": -1,
         "elo": 1544
+      },
+      {
+        "team": "Tunisia",
+        "team_cn": "突尼斯",
+        "played": 1,
+        "pts": 0,
+        "gf": 1,
+        "ga": 2,
+        "gd": -1,
+        "elo": 1417
       }
     ],
     "G": [
@@ -544,6 +544,15 @@
       "status": "🔵 ADVANCING (top 8)"
     },
     {
+      "team": "Japan",
+      "team_cn": "日本",
+      "group": "F",
+      "pts": 0,
+      "gd": -1,
+      "gf": 1,
+      "status": "🔵 ADVANCING (top 8)"
+    },
+    {
       "team": "Turkey",
       "team_cn": "土耳其",
       "group": "D",
@@ -670,6 +679,16 @@
         "score": "1-1",
         "goals": "Haller 38'(科); Caicedo 55'(厄)",
         "note": ""
+      },
+      {
+        "home": "Sweden",
+        "home_cn": "瑞典",
+        "away": "Tunisia",
+        "away_cn": "突尼斯",
+        "group": "F",
+        "score": "2-1",
+        "goals": "Isak 23'(瑞), Gyökeres 71'(瑞); Msakni 55'(突)",
+        "note": ""
       }
     ]
   },
@@ -768,7 +787,7 @@
     {
       "date": "2026-06-15",
       "weekday_cn": "周一",
-      "match_count": 4,
+      "match_count": 5,
       "matches": [
         {
           "home": "Haiti",
@@ -809,14 +828,7 @@
           "venue": "Philadelphia",
           "venue_cn": "费城",
           "played": true
-        }
-      ]
-    },
-    {
-      "date": "2026-06-16",
-      "weekday_cn": "周二",
-      "match_count": 5,
-      "matches": [
+        },
         {
           "home": "Sweden",
           "home_cn": "瑞典",
@@ -825,8 +837,15 @@
           "group": "F",
           "venue": "Monterrey",
           "venue_cn": "蒙特雷",
-          "played": false
-        },
+          "played": true
+        }
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "weekday_cn": "周二",
+      "match_count": 4,
+      "matches": [
         {
           "home": "Spain",
           "home_cn": "西班牙",

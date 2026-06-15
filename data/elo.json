@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 16:12 BJT",
+  "updated_at": "2026-06-15 16:36 BJT",
   "ratings": [
     {
       "rank": 1,
@@ -183,6 +183,15 @@
     },
     {
       "rank": 21,
+      "team": "Sweden",
+      "team_cn": "瑞典",
+      "elo": 1543,
+      "initial_elo": 1520,
+      "change": 23,
+      "matches": 1
+    },
+    {
+      "rank": 22,
       "team": "Norway",
       "team_cn": "挪威",
       "elo": 1540,
@@ -191,7 +200,7 @@
       "matches": 0
     },
     {
-      "rank": 22,
+      "rank": 23,
       "team": "Ecuador",
       "team_cn": "厄瓜多尔",
       "elo": 1520,
@@ -200,22 +209,13 @@
       "matches": 1
     },
     {
-      "rank": 23,
+      "rank": 24,
       "team": "Ivory Coast",
       "team_cn": "科特迪瓦",
       "elo": 1520,
       "initial_elo": 1520,
       "change": 0,
       "matches": 1
-    },
-    {
-      "rank": 24,
-      "team": "Sweden",
-      "team_cn": "瑞典",
-      "elo": 1520,
-      "initial_elo": 1520,
-      "change": 0,
-      "matches": 0
     },
     {
       "rank": 25,
@@ -291,20 +291,20 @@
     },
     {
       "rank": 33,
-      "team": "Tunisia",
-      "team_cn": "突尼斯",
-      "elo": 1440,
-      "initial_elo": 1440,
-      "change": 0,
-      "matches": 0
-    },
-    {
-      "rank": 34,
       "team": "Australia",
       "team_cn": "澳大利亚",
       "elo": 1423,
       "initial_elo": 1380,
       "change": 43,
+      "matches": 1
+    },
+    {
+      "rank": 34,
+      "team": "Tunisia",
+      "team_cn": "突尼斯",
+      "elo": 1417,
+      "initial_elo": 1440,
+      "change": -23,
       "matches": 1
     },
     {
