@@ -277,6 +277,30 @@ body {
   padding: 20px 24px;
 }
 
+/* ── Historical Result Cards ──────────────────────────────────────────── */
+.result-card {
+  transition: box-shadow 0.2s;
+}
+.result-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.result-card.expanded .result-card-detail {
+  display: block !important;
+}
+.result-card-header {
+  user-select: none;
+}
+.result-score {
+  font-variant-numeric: tabular-nums;
+}
+
+.result-day-header {
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  z-index: 1;
+}
+
 /* ── Analysis Sections ───────────────────────────────────────────────── */
 .analysis-section {
   margin-bottom: 20px;

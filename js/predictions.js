@@ -1,8 +1,8 @@
 /* ═══════════════════════════════════════════════════════════════════════
-   predictions.js — Tomorrow's Match Predictions Tab
-   - Loads predictions.json
-   - Renders match cards with 4-part analysis
-   - W/D/L probability bars, scorelines, confidence stars
+   predictions.js — 比赛结果 & 预测 Tab
+   - Loads predictions.json (historical_results + tomorrow predictions)
+   - Renders 历史比赛结果 section with actual scores
+   - Renders 明天预测 section with AI analysis
    ═══════════════════════════════════════════════════════════════════════ */
 
 const PredictionsTab = {
@@ -16,16 +16,13 @@ const PredictionsTab = {
     loading.style.display = 'none';
     container.style.display = 'block';
 
-    if (!data || !data.matches || data.matches.length === 0) {
+    if (!data) {
       container.innerHTML = `
         <div class="card">
           <div class="no-data">
             <p style="font-size:2rem;">📭</p>
-            <p style="font-size:1.2rem;font-weight:600;">暂无预测数据</p>
-            <p>${data ? data.date_label_cn : '今天'} 没有世界杯比赛，或数据尚未生成。</p>
-            <p style="font-size:0.85rem;color:var(--gray-500);">
-              小组赛阶段：北京时间 6月12日 – 6月29日
-            </p>
+            <p style="font-size:1.2rem;font-weight:600;">暂无数据</p>
+            <p>数据尚未生成。</p>
           </div>
         </div>`;
       return;
@@ -35,17 +32,13 @@ const PredictionsTab = {
     document.getElementById('footer-updated').textContent =
       data.generated_at || '—';
 
-    // Build header banner
-    let html = `
-      <div class="card" style="text-align:center;background:linear-gradient(135deg,var(--navy),var(--green-dark));color:var(--white);">
-        <h2 style="margin:0;font-size:1.4rem;">📅 ${data.date_label_cn} 比赛预测</h2>
-        <p style="margin:8px 0 0;opacity:0.8;">共 ${data.match_count} 场比赛 · 生成时间：${data.generated_at}</p>
-      </div>`;
+    let html = '';
 
-    // Render each match
-    data.matches.forEach((m, idx) => {
-      html += this.renderMatchCard(m, idx);
-    });
+    // ── Section 1: 历史比赛结果 ──
+    html += this.renderHistoricalResults(data);
+
+    // ── Section 2: 明天预测 ──
+    html += this.renderTomorrowPredictions(data);
 
     container.innerHTML = html;
 
@@ -57,6 +50,117 @@ const PredictionsTab = {
         content.classList.toggle('collapsed');
       });
     });
+
+    // Attach result card expand handlers
+    container.querySelectorAll('.result-card-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const card = header.closest('.result-card');
+        card.classList.toggle('expanded');
+      });
+    });
+  },
+
+  // ── Render historical results section ──
+  renderHistoricalResults(data) {
+    const historical = data.historical_results;
+    if (!historical || historical.length === 0) {
+      return `
+        <div class="card" style="text-align:center;">
+          <div class="no-data">
+            <p style="font-size:1.5rem;">📋</p>
+            <p style="font-weight:600;">暂无历史比赛记录</p>
+          </div>
+        </div>`;
+    }
+
+    let html = `
+      <div class="card" style="text-align:center;background:linear-gradient(135deg,var(--navy),var(--green-dark));color:var(--white);margin-bottom:24px;">
+        <h2 style="margin:0;font-size:1.4rem;">📋 历史比赛结果</h2>
+        <p style="margin:8px 0 0;opacity:0.8;">${historical.length} 个比赛日 · ${historical.reduce((s, d) => s + d.match_count, 0)} 场比赛</p>
+      </div>`;
+
+    historical.forEach(day => {
+      html += `
+        <div class="result-day" style="margin-bottom:16px;">
+          <div class="result-day-header" style="font-weight:700;font-size:1rem;color:var(--navy);padding:8px 0;border-bottom:2px solid var(--green);margin-bottom:8px;">
+            📅 ${day.date_label_cn} · ${day.match_count} 场
+          </div>`;
+
+      day.matches.forEach(m => {
+        html += this.renderResultCard(m);
+      });
+
+      html += '</div>';
+    });
+
+    return html;
+  },
+
+  // ── Render a single historical result card ──
+  renderResultCard(m) {
+    const hasGoals = m.goals && m.goals.trim();
+    const hasNote = m.note && m.note.trim();
+    const hasDetail = hasGoals || hasNote;
+
+    return `
+      <div class="result-card" style="background:var(--white);border:1px solid var(--gray-200);border-radius:10px;padding:16px;margin-bottom:8px;${hasDetail ? 'cursor:pointer;' : ''}">
+        <div class="result-card-header" style="display:flex;align-items:center;justify-content:space-between;${hasDetail ? '' : 'cursor:default;'}">
+          <div class="result-teams" style="flex:1;min-width:0;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div style="text-align:right;flex:1;min-width:0;">
+                <div style="font-weight:700;font-size:1rem;">${App.escapeHtml(m.home_cn)}</div>
+                <div style="font-size:0.75rem;color:var(--gray-500);">${App.escapeHtml(m.home)}</div>
+              </div>
+              <div class="result-score" style="font-size:1.5rem;font-weight:900;color:var(--navy);white-space:nowrap;padding:0 12px;">
+                ${App.escapeHtml(m.score)}
+              </div>
+              <div style="text-align:left;flex:1;min-width:0;">
+                <div style="font-weight:700;font-size:1rem;">${App.escapeHtml(m.away_cn)}</div>
+                <div style="font-size:0.75rem;color:var(--gray-500);">${App.escapeHtml(m.away)}</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:12px;margin-top:8px;font-size:0.8rem;color:var(--gray-500);">
+              <span>🏆 Group ${m.group}</span>
+              ${m.venue_cn ? `<span>🏟 ${App.escapeHtml(m.venue_cn)}</span>` : ''}
+              <span>🕐 ${App.escapeHtml(m.time_bj)} BJT</span>
+            </div>
+          </div>
+          ${hasDetail ? '<span style="color:var(--gray-400);font-size:0.8rem;">展开 ▼</span>' : ''}
+        </div>
+        ${hasDetail ? `
+        <div class="result-card-detail" style="display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--gray-200);font-size:0.9rem;line-height:1.8;color:var(--gray-700);">
+          ${hasGoals ? `<div><strong>⚽ 进球：</strong>${App.escapeHtml(m.goals)}</div>` : ''}
+          ${hasNote ? `<div style="margin-top:4px;"><strong>📝 备注：</strong>${App.escapeHtml(m.note)}</div>` : ''}
+        </div>` : ''}
+      </div>`;
+  },
+
+  // ── Render tomorrow predictions section ──
+  renderTomorrowPredictions(data) {
+    const matches = data.matches;
+    if (!matches || matches.length === 0) {
+      return `
+        <div class="card" style="text-align:center;margin-top:24px;">
+          <div class="no-data">
+            <p style="font-size:1.5rem;">📭</p>
+            <p style="font-size:1.1rem;font-weight:600;">暂无明日预测</p>
+            <p style="font-size:0.85rem;color:var(--gray-500);">${data.date_label_cn} 没有未赛比赛，或数据尚未生成。</p>
+          </div>
+        </div>`;
+    }
+
+    let html = `
+      <div class="card" style="text-align:center;background:linear-gradient(135deg,var(--navy),var(--green-dark));color:var(--white);margin-bottom:24px;margin-top:24px;">
+        <h2 style="margin:0;font-size:1.4rem;">📅 ${data.date_label_cn} 比赛预测</h2>
+        <p style="margin:8px 0 0;opacity:0.8;">共 ${data.match_count} 场比赛 · 生成时间：${data.generated_at}</p>
+      </div>`;
+
+    // Render each prediction match card
+    data.matches.forEach((m, idx) => {
+      html += this.renderMatchCard(m, idx);
+    });
+
+    return html;
   },
 
   renderMatchCard(m, idx) {
