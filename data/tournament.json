@@ -1,27 +1,7 @@
 {
-  "updated_at": "2026-06-15 13:27 BJT",
+  "updated_at": "2026-06-15 13:48 BJT",
   "groups": {
     "A": [
-      {
-        "team": "Mexico",
-        "team_cn": "墨西哥",
-        "played": 1,
-        "pts": 3,
-        "gf": 2,
-        "ga": 0,
-        "gd": 2,
-        "elo": 1650
-      },
-      {
-        "team": "South Korea",
-        "team_cn": "韩国",
-        "played": 1,
-        "pts": 3,
-        "gf": 2,
-        "ga": 1,
-        "gd": 1,
-        "elo": 1547
-      },
       {
         "team": "Czechia",
         "team_cn": "捷克",
@@ -33,6 +13,16 @@
         "elo": 1453
       },
       {
+        "team": "Mexico",
+        "team_cn": "墨西哥",
+        "played": 1,
+        "pts": 3,
+        "gf": 2,
+        "ga": 0,
+        "gd": 2,
+        "elo": 1650
+      },
+      {
         "team": "South Africa",
         "team_cn": "南非",
         "played": 1,
@@ -41,19 +31,19 @@
         "ga": 2,
         "gd": -2,
         "elo": 1350
+      },
+      {
+        "team": "South Korea",
+        "team_cn": "韩国",
+        "played": 1,
+        "pts": 3,
+        "gf": 2,
+        "ga": 1,
+        "gd": 1,
+        "elo": 1547
       }
     ],
     "B": [
-      {
-        "team": "Canada",
-        "team_cn": "加拿大",
-        "played": 1,
-        "pts": 1,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "elo": 1492
-      },
       {
         "team": "Bosnia & Herzegovina",
         "team_cn": "波黑",
@@ -63,6 +53,16 @@
         "ga": 1,
         "gd": 0,
         "elo": 1408
+      },
+      {
+        "team": "Canada",
+        "team_cn": "加拿大",
+        "played": 1,
+        "pts": 1,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "elo": 1492
       },
       {
         "team": "Qatar",
@@ -87,16 +87,6 @@
     ],
     "C": [
       {
-        "team": "Scotland",
-        "team_cn": "苏格兰",
-        "played": 1,
-        "pts": 3,
-        "gf": 1,
-        "ga": 0,
-        "gd": 1,
-        "elo": 1467
-      },
-      {
         "team": "Brazil",
         "team_cn": "巴西",
         "played": 1,
@@ -105,6 +95,16 @@
         "ga": 1,
         "gd": 0,
         "elo": 1804
+      },
+      {
+        "team": "Haiti",
+        "team_cn": "海地",
+        "played": 1,
+        "pts": 0,
+        "gf": 0,
+        "ga": 1,
+        "gd": -1,
+        "elo": 1093
       },
       {
         "team": "Morocco",
@@ -117,27 +117,17 @@
         "elo": 1636
       },
       {
-        "team": "Haiti",
-        "team_cn": "海地",
+        "team": "Scotland",
+        "team_cn": "苏格兰",
         "played": 1,
-        "pts": 0,
-        "gf": 0,
-        "ga": 1,
-        "gd": -1,
-        "elo": 1093
+        "pts": 3,
+        "gf": 1,
+        "ga": 0,
+        "gd": 1,
+        "elo": 1467
       }
     ],
     "D": [
-      {
-        "team": "USA",
-        "team_cn": "美国",
-        "played": 1,
-        "pts": 3,
-        "gf": 4,
-        "ga": 1,
-        "gd": 3,
-        "elo": 1633
-      },
       {
         "team": "Australia",
         "team_cn": "澳大利亚",
@@ -147,6 +137,16 @@
         "ga": 0,
         "gd": 2,
         "elo": 1423
+      },
+      {
+        "team": "Paraguay",
+        "team_cn": "巴拉圭",
+        "played": 1,
+        "pts": 0,
+        "gf": 1,
+        "ga": 4,
+        "gd": -3,
+        "elo": 1387
       },
       {
         "team": "Turkey",
@@ -159,17 +159,37 @@
         "elo": 1497
       },
       {
-        "team": "Paraguay",
-        "team_cn": "巴拉圭",
+        "team": "USA",
+        "team_cn": "美国",
         "played": 1,
-        "pts": 0,
-        "gf": 1,
-        "ga": 4,
-        "gd": -3,
-        "elo": 1387
+        "pts": 3,
+        "gf": 4,
+        "ga": 1,
+        "gd": 3,
+        "elo": 1633
       }
     ],
     "E": [
+      {
+        "team": "Curaçao",
+        "team_cn": "库拉索",
+        "played": 1,
+        "pts": 0,
+        "gf": 1,
+        "ga": 7,
+        "gd": -6,
+        "elo": 1138
+      },
+      {
+        "team": "Ecuador",
+        "team_cn": "厄瓜多尔",
+        "played": 1,
+        "pts": 1,
+        "gf": 1,
+        "ga": 1,
+        "gd": 0,
+        "elo": 1520
+      },
       {
         "team": "Germany",
         "team_cn": "德国",
@@ -189,29 +209,19 @@
         "ga": 1,
         "gd": 0,
         "elo": 1520
-      },
-      {
-        "team": "Ecuador",
-        "team_cn": "厄瓜多尔",
-        "played": 1,
-        "pts": 1,
-        "gf": 1,
-        "ga": 1,
-        "gd": 0,
-        "elo": 1520
-      },
-      {
-        "team": "Curaçao",
-        "team_cn": "库拉索",
-        "played": 1,
-        "pts": 0,
-        "gf": 1,
-        "ga": 7,
-        "gd": -6,
-        "elo": 1138
       }
     ],
     "F": [
+      {
+        "team": "Japan",
+        "team_cn": "日本",
+        "played": 1,
+        "pts": 0,
+        "gf": 1,
+        "ga": 2,
+        "gd": -1,
+        "elo": 1544
+      },
       {
         "team": "Netherlands",
         "team_cn": "荷兰",
@@ -223,14 +233,276 @@
         "elo": 1756
       },
       {
-        "team": "Japan",
-        "team_cn": "日本",
-        "played": 1,
+        "team": "Sweden",
+        "team_cn": "瑞典",
+        "played": 0,
         "pts": 0,
-        "gf": 1,
-        "ga": 2,
-        "gd": -1,
-        "elo": 1544
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1520
+      },
+      {
+        "team": "Tunisia",
+        "team_cn": "突尼斯",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1440
+      }
+    ],
+    "G": [
+      {
+        "team": "Belgium",
+        "team_cn": "比利时",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1720
+      },
+      {
+        "team": "Egypt",
+        "team_cn": "埃及",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1480
+      },
+      {
+        "team": "Iran",
+        "team_cn": "伊朗",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1460
+      },
+      {
+        "team": "New Zealand",
+        "team_cn": "新西兰",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1180
+      }
+    ],
+    "H": [
+      {
+        "team": "Cape Verde",
+        "team_cn": "佛得角",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1240
+      },
+      {
+        "team": "Saudi Arabia",
+        "team_cn": "沙特阿拉伯",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1360
+      },
+      {
+        "team": "Spain",
+        "team_cn": "西班牙",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1780
+      },
+      {
+        "team": "Uruguay",
+        "team_cn": "乌拉圭",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1660
+      }
+    ],
+    "I": [
+      {
+        "team": "France",
+        "team_cn": "法国",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1860
+      },
+      {
+        "team": "Iraq",
+        "team_cn": "伊拉克",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1320
+      },
+      {
+        "team": "Norway",
+        "team_cn": "挪威",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1540
+      },
+      {
+        "team": "Senegal",
+        "team_cn": "塞内加尔",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1580
+      }
+    ],
+    "J": [
+      {
+        "team": "Algeria",
+        "team_cn": "阿尔及利亚",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1480
+      },
+      {
+        "team": "Argentina",
+        "team_cn": "阿根廷",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1880
+      },
+      {
+        "team": "Austria",
+        "team_cn": "奥地利",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1580
+      },
+      {
+        "team": "Jordan",
+        "team_cn": "约旦",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1260
+      }
+    ],
+    "K": [
+      {
+        "team": "Colombia",
+        "team_cn": "哥伦比亚",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1600
+      },
+      {
+        "team": "DR Congo",
+        "team_cn": "刚果(金)",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1360
+      },
+      {
+        "team": "Portugal",
+        "team_cn": "葡萄牙",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1720
+      },
+      {
+        "team": "Uzbekistan",
+        "team_cn": "乌兹别克斯坦",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1300
+      }
+    ],
+    "L": [
+      {
+        "team": "Croatia",
+        "team_cn": "克罗地亚",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1700
+      },
+      {
+        "team": "England",
+        "team_cn": "英格兰",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1800
+      },
+      {
+        "team": "Ghana",
+        "team_cn": "加纳",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1440
+      },
+      {
+        "team": "Panama",
+        "team_cn": "巴拿马",
+        "played": 0,
+        "pts": 0,
+        "gf": 0,
+        "ga": 0,
+        "gd": 0,
+        "elo": 1280
       }
     ]
   },
