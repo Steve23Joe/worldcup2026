@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 18:39 BJT",
+  "updated_at": "2026-06-16 11:47 BJT",
   "teams": {
     "Algeria": {
       "team_cn": "阿尔及利亚",
@@ -116,13 +116,16 @@
       "strengths": "中场创造力顶级，前场爆点众多，进攻手段丰富",
       "weaknesses": "后防老化问题未完全解決，整体防守协同性不稳定",
       "tournament": {
-        "played": 0,
-        "wins": 0,
+        "played": 1,
+        "wins": 1,
         "draws": 0,
         "losses": 0,
-        "gf": 0,
-        "ga": 0,
-        "scorers": {}
+        "gf": 2,
+        "ga": 1,
+        "scorers": {
+          "De": 1,
+          "Openda": 1
+        }
       }
     },
     "Bosnia & Herzegovina": {
@@ -219,12 +222,12 @@
       "strengths": "防守紧凑，反击速度快，团队精神顽强",
       "weaknesses": "人员轮换深度不足，面对持续高压时容易崩盘",
       "tournament": {
-        "played": 0,
+        "played": 1,
         "wins": 0,
         "draws": 0,
-        "losses": 0,
+        "losses": 1,
         "gf": 0,
-        "ga": 0,
+        "ga": 2,
         "scorers": {}
       }
     },
@@ -391,13 +394,15 @@
       "strengths": "拥有世界级终结者，防守纪律性好，反击效率高",
       "weaknesses": "过度依赖Salah个人发挥，中场创造力偏弱",
       "tournament": {
-        "played": 0,
+        "played": 1,
         "wins": 0,
         "draws": 0,
-        "losses": 0,
-        "gf": 0,
-        "ga": 0,
-        "scorers": {}
+        "losses": 1,
+        "gf": 1,
+        "ga": 2,
+        "scorers": {
+          "Salah": 1
+        }
       }
     },
     "England": {
@@ -545,13 +550,16 @@
       "strengths": "防守组织顶级，身体对抗能力强，意志品质顽强",
       "weaknesses": "控球和创造力不足，面对密集防守时缺乏破局手段",
       "tournament": {
-        "played": 0,
-        "wins": 0,
+        "played": 1,
+        "wins": 1,
         "draws": 0,
         "losses": 0,
-        "gf": 0,
+        "gf": 2,
         "ga": 0,
-        "scorers": {}
+        "scorers": {
+          "Taremi": 1,
+          "Azmoun": 1
+        }
       }
     },
     "Iraq": {
@@ -753,12 +761,12 @@
       "strengths": "身体对抗有优势，中锋能力强，定位球威胁大",
       "weaknesses": "技战术水平有限，面对技术型球队时全面被动",
       "tournament": {
-        "played": 0,
+        "played": 1,
         "wins": 0,
         "draws": 0,
-        "losses": 0,
+        "losses": 1,
         "gf": 0,
-        "ga": 0,
+        "ga": 2,
         "scorers": {}
       }
     },
@@ -902,13 +910,15 @@
       "strengths": "球员技术功底扎实，边路突破能力突出，团队配合默契",
       "weaknesses": "防守高强度比赛经验不足，身体对抗不占优",
       "tournament": {
-        "played": 0,
+        "played": 1,
         "wins": 0,
         "draws": 0,
-        "losses": 0,
-        "gf": 0,
-        "ga": 0,
-        "scorers": {}
+        "losses": 1,
+        "gf": 1,
+        "ga": 2,
+        "scorers": {
+          "Al-Dawsari": 1
+        }
       }
     },
     "Scotland": {
@@ -1029,13 +1039,16 @@
       "strengths": "中场控制力世界第一梯队，技术细腻度顶级，青训体系输送稳定",
       "weaknesses": "缺少顶级终结者，面对极致防守时传控变成无效控球",
       "tournament": {
-        "played": 0,
-        "wins": 0,
+        "played": 1,
+        "wins": 1,
         "draws": 0,
         "losses": 0,
-        "gf": 0,
+        "gf": 2,
         "ga": 0,
-        "scorers": {}
+        "scorers": {
+          "Morata": 1,
+          "Yamal": 1
+        }
       }
     },
     "Sweden": {
@@ -1188,13 +1201,16 @@
       "strengths": "防守硬度南美顶级，中场全能型球员多，锋线把握机会能力强",
       "weaknesses": "控球能力不是强项，面对同样硬朗的欧洲球队时技术劣势显现",
       "tournament": {
-        "played": 0,
-        "wins": 0,
+        "played": 1,
+        "wins": 1,
         "draws": 0,
         "losses": 0,
-        "gf": 0,
-        "ga": 0,
-        "scorers": {}
+        "gf": 2,
+        "ga": 1,
+        "scorers": {
+          "Núñez": 1,
+          "Valverde": 1
+        }
       }
     },
     "Uzbekistan": {

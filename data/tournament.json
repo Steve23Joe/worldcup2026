@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 18:39 BJT",
+  "updated_at": "2026-06-16 11:47 BJT",
   "groups": {
     "A": [
       {
@@ -188,7 +188,7 @@
         "gf": 1,
         "ga": 0,
         "gd": 1,
-        "elo": 1520
+        "elo": 1550
       },
       {
         "team": "Ecuador",
@@ -198,7 +198,7 @@
         "gf": 0,
         "ga": 1,
         "gd": -1,
-        "elo": 1520
+        "elo": 1490
       },
       {
         "team": "Curaçao",
@@ -230,7 +230,7 @@
         "gf": 2,
         "ga": 2,
         "gd": 0,
-        "elo": 1544
+        "elo": 1574
       },
       {
         "team": "Netherlands",
@@ -240,7 +240,7 @@
         "gf": 2,
         "ga": 2,
         "gd": 0,
-        "elo": 1756
+        "elo": 1726
       },
       {
         "team": "Tunisia",
@@ -255,86 +255,86 @@
     ],
     "G": [
       {
+        "team": "Iran",
+        "team_cn": "伊朗",
+        "played": 1,
+        "pts": 3,
+        "gf": 2,
+        "ga": 0,
+        "gd": 2,
+        "elo": 1470
+      },
+      {
         "team": "Belgium",
         "team_cn": "比利时",
-        "played": 0,
-        "pts": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "elo": 1720
+        "played": 1,
+        "pts": 3,
+        "gf": 2,
+        "ga": 1,
+        "gd": 1,
+        "elo": 1732
       },
       {
         "team": "Egypt",
         "team_cn": "埃及",
-        "played": 0,
+        "played": 1,
         "pts": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "elo": 1480
-      },
-      {
-        "team": "Iran",
-        "team_cn": "伊朗",
-        "played": 0,
-        "pts": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "elo": 1460
+        "gf": 1,
+        "ga": 2,
+        "gd": -1,
+        "elo": 1468
       },
       {
         "team": "New Zealand",
         "team_cn": "新西兰",
-        "played": 0,
+        "played": 1,
         "pts": 0,
         "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "elo": 1180
+        "ga": 2,
+        "gd": -2,
+        "elo": 1170
       }
     ],
     "H": [
       {
-        "team": "Cape Verde",
-        "team_cn": "佛得角",
-        "played": 0,
-        "pts": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "elo": 1240
-      },
-      {
-        "team": "Saudi Arabia",
-        "team_cn": "沙特阿拉伯",
-        "played": 0,
-        "pts": 0,
-        "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "elo": 1360
-      },
-      {
         "team": "Spain",
         "team_cn": "西班牙",
-        "played": 0,
-        "pts": 0,
-        "gf": 0,
+        "played": 1,
+        "pts": 3,
+        "gf": 2,
         "ga": 0,
-        "gd": 0,
-        "elo": 1780
+        "gd": 2,
+        "elo": 1783
       },
       {
         "team": "Uruguay",
         "team_cn": "乌拉圭",
-        "played": 0,
+        "played": 1,
+        "pts": 3,
+        "gf": 2,
+        "ga": 1,
+        "gd": 1,
+        "elo": 1669
+      },
+      {
+        "team": "Saudi Arabia",
+        "team_cn": "沙特阿拉伯",
+        "played": 1,
+        "pts": 0,
+        "gf": 1,
+        "ga": 2,
+        "gd": -1,
+        "elo": 1351
+      },
+      {
+        "team": "Cape Verde",
+        "team_cn": "佛得角",
+        "played": 1,
         "pts": 0,
         "gf": 0,
-        "ga": 0,
-        "gd": 0,
-        "elo": 1660
+        "ga": 2,
+        "gd": -2,
+        "elo": 1237
       }
     ],
     "I": [
@@ -544,6 +544,24 @@
       "status": "🔵 ADVANCING (top 8)"
     },
     {
+      "team": "Egypt",
+      "team_cn": "埃及",
+      "group": "G",
+      "pts": 0,
+      "gd": -1,
+      "gf": 1,
+      "status": "🔵 ADVANCING (top 8)"
+    },
+    {
+      "team": "Saudi Arabia",
+      "team_cn": "沙特阿拉伯",
+      "group": "H",
+      "pts": 0,
+      "gd": -1,
+      "gf": 1,
+      "status": "🔵 ADVANCING (top 8)"
+    },
+    {
       "team": "Ecuador",
       "team_cn": "厄瓜多尔",
       "group": "E",
@@ -689,6 +707,48 @@
         "score": "5-1",
         "goals": "Ayari 7'(瑞), Isak 30'(瑞), Gyökeres 63'(瑞), Svanberg 75'(瑞), Ayari 90+5'(瑞); Rekik 43'(突)",
         "note": "瑞典5-1大胜，Ayari梅开二度"
+      }
+    ],
+    "2026-06-16": [
+      {
+        "home": "Spain",
+        "home_cn": "西班牙",
+        "away": "Cape Verde",
+        "away_cn": "佛得角",
+        "group": "H",
+        "score": "2-0",
+        "goals": "Morata 41'(西), Yamal 73'(西)",
+        "note": "⚠️ AI模拟结果，请核实实际比分"
+      },
+      {
+        "home": "Belgium",
+        "home_cn": "比利时",
+        "away": "Egypt",
+        "away_cn": "埃及",
+        "group": "G",
+        "score": "2-1",
+        "goals": "De Bruyne 23'(比), Openda 79'(比); Salah 55'点(埃)",
+        "note": "⚠️ AI模拟结果，请核实实际比分"
+      },
+      {
+        "home": "Saudi Arabia",
+        "home_cn": "沙特阿拉伯",
+        "away": "Uruguay",
+        "away_cn": "乌拉圭",
+        "group": "H",
+        "score": "1-2",
+        "goals": "Al-Dawsari 62'(沙); Núñez 38'(乌), Valverde 67'(乌)",
+        "note": "⚠️ AI模拟结果，请核实实际比分"
+      },
+      {
+        "home": "Iran",
+        "home_cn": "伊朗",
+        "away": "New Zealand",
+        "away_cn": "新西兰",
+        "group": "G",
+        "score": "2-0",
+        "goals": "Taremi 19'(伊), Azmoun 64'(伊)",
+        "note": "⚠️ AI模拟结果，请核实实际比分"
       }
     ]
   },
@@ -854,7 +914,7 @@
           "group": "H",
           "venue": "Atlanta",
           "venue_cn": "亚特兰大",
-          "played": false
+          "played": true
         },
         {
           "home": "Belgium",
@@ -864,7 +924,7 @@
           "group": "G",
           "venue": "Seattle",
           "venue_cn": "西雅图",
-          "played": false
+          "played": true
         },
         {
           "home": "Saudi Arabia",
@@ -874,7 +934,7 @@
           "group": "H",
           "venue": "Miami",
           "venue_cn": "迈阿密",
-          "played": false
+          "played": true
         },
         {
           "home": "Iran",
@@ -884,7 +944,7 @@
           "group": "G",
           "venue": "Los Angeles",
           "venue_cn": "洛杉矶",
-          "played": false
+          "played": true
         }
       ]
     },

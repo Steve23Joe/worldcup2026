@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 18:39 BJT",
+  "updated_at": "2026-06-16 11:47 BJT",
   "ratings": [
     {
       "rank": 1,
@@ -41,28 +41,28 @@
       "rank": 5,
       "team": "Spain",
       "team_cn": "西班牙",
-      "elo": 1780,
+      "elo": 1783,
       "initial_elo": 1780,
-      "change": 0,
-      "matches": 0
+      "change": 3,
+      "matches": 1
     },
     {
       "rank": 6,
-      "team": "Netherlands",
-      "team_cn": "荷兰",
-      "elo": 1756,
-      "initial_elo": 1740,
-      "change": 16,
+      "team": "Belgium",
+      "team_cn": "比利时",
+      "elo": 1732,
+      "initial_elo": 1720,
+      "change": 12,
       "matches": 1
     },
     {
       "rank": 7,
-      "team": "Belgium",
-      "team_cn": "比利时",
-      "elo": 1720,
-      "initial_elo": 1720,
-      "change": 0,
-      "matches": 0
+      "team": "Netherlands",
+      "team_cn": "荷兰",
+      "elo": 1726,
+      "initial_elo": 1740,
+      "change": -14,
+      "matches": 1
     },
     {
       "rank": 8,
@@ -95,10 +95,10 @@
       "rank": 11,
       "team": "Uruguay",
       "team_cn": "乌拉圭",
-      "elo": 1660,
+      "elo": 1669,
       "initial_elo": 1660,
-      "change": 0,
-      "matches": 0
+      "change": 9,
+      "matches": 1
     },
     {
       "rank": 12,
@@ -165,6 +165,24 @@
     },
     {
       "rank": 19,
+      "team": "Japan",
+      "team_cn": "日本",
+      "elo": 1574,
+      "initial_elo": 1560,
+      "change": 14,
+      "matches": 1
+    },
+    {
+      "rank": 20,
+      "team": "Ivory Coast",
+      "team_cn": "科特迪瓦",
+      "elo": 1550,
+      "initial_elo": 1520,
+      "change": 30,
+      "matches": 1
+    },
+    {
+      "rank": 21,
       "team": "South Korea",
       "team_cn": "韩国",
       "elo": 1547,
@@ -173,16 +191,7 @@
       "matches": 1
     },
     {
-      "rank": 20,
-      "team": "Japan",
-      "team_cn": "日本",
-      "elo": 1544,
-      "initial_elo": 1560,
-      "change": -16,
-      "matches": 1
-    },
-    {
-      "rank": 21,
+      "rank": 22,
       "team": "Sweden",
       "team_cn": "瑞典",
       "elo": 1543,
@@ -191,7 +200,7 @@
       "matches": 1
     },
     {
-      "rank": 22,
+      "rank": 23,
       "team": "Norway",
       "team_cn": "挪威",
       "elo": 1540,
@@ -200,25 +209,7 @@
       "matches": 0
     },
     {
-      "rank": 23,
-      "team": "Ecuador",
-      "team_cn": "厄瓜多尔",
-      "elo": 1520,
-      "initial_elo": 1520,
-      "change": 0,
-      "matches": 1
-    },
-    {
       "rank": 24,
-      "team": "Ivory Coast",
-      "team_cn": "科特迪瓦",
-      "elo": 1520,
-      "initial_elo": 1520,
-      "change": 0,
-      "matches": 1
-    },
-    {
-      "rank": 25,
       "team": "Turkey",
       "team_cn": "土耳其",
       "elo": 1497,
@@ -227,12 +218,21 @@
       "matches": 1
     },
     {
-      "rank": 26,
+      "rank": 25,
       "team": "Canada",
       "team_cn": "加拿大",
       "elo": 1492,
       "initial_elo": 1500,
       "change": -8,
+      "matches": 1
+    },
+    {
+      "rank": 26,
+      "team": "Ecuador",
+      "team_cn": "厄瓜多尔",
+      "elo": 1490,
+      "initial_elo": 1520,
+      "change": -30,
       "matches": 1
     },
     {
@@ -246,30 +246,30 @@
     },
     {
       "rank": 28,
-      "team": "Egypt",
-      "team_cn": "埃及",
-      "elo": 1480,
-      "initial_elo": 1480,
-      "change": 0,
-      "matches": 0
+      "team": "Iran",
+      "team_cn": "伊朗",
+      "elo": 1470,
+      "initial_elo": 1460,
+      "change": 10,
+      "matches": 1
     },
     {
       "rank": 29,
+      "team": "Egypt",
+      "team_cn": "埃及",
+      "elo": 1468,
+      "initial_elo": 1480,
+      "change": -12,
+      "matches": 1
+    },
+    {
+      "rank": 30,
       "team": "Scotland",
       "team_cn": "苏格兰",
       "elo": 1467,
       "initial_elo": 1460,
       "change": 7,
       "matches": 1
-    },
-    {
-      "rank": 30,
-      "team": "Iran",
-      "team_cn": "伊朗",
-      "elo": 1460,
-      "initial_elo": 1460,
-      "change": 0,
-      "matches": 0
     },
     {
       "rank": 31,
@@ -336,20 +336,20 @@
     },
     {
       "rank": 38,
-      "team": "Saudi Arabia",
-      "team_cn": "沙特阿拉伯",
-      "elo": 1360,
-      "initial_elo": 1360,
-      "change": 0,
-      "matches": 0
-    },
-    {
-      "rank": 39,
       "team": "Qatar",
       "team_cn": "卡塔尔",
       "elo": 1359,
       "initial_elo": 1340,
       "change": 19,
+      "matches": 1
+    },
+    {
+      "rank": 39,
+      "team": "Saudi Arabia",
+      "team_cn": "沙特阿拉伯",
+      "elo": 1351,
+      "initial_elo": 1360,
+      "change": -9,
       "matches": 1
     },
     {
@@ -401,19 +401,19 @@
       "rank": 45,
       "team": "Cape Verde",
       "team_cn": "佛得角",
-      "elo": 1240,
+      "elo": 1237,
       "initial_elo": 1240,
-      "change": 0,
-      "matches": 0
+      "change": -3,
+      "matches": 1
     },
     {
       "rank": 46,
       "team": "New Zealand",
       "team_cn": "新西兰",
-      "elo": 1180,
+      "elo": 1170,
       "initial_elo": 1180,
-      "change": 0,
-      "matches": 0
+      "change": -10,
+      "matches": 1
     },
     {
       "rank": 47,
